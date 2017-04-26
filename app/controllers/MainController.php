@@ -2,6 +2,7 @@
 class MainController extends Controller
 {
     // new line comment 
+    // test
 	protected $newSince;
 	protected $widthItem;
 
