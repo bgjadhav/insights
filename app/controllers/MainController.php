@@ -1,7 +1,7 @@
 <?php
 class MainController extends Controller
 {
-
+    // new line comment 
 	protected $newSince;
 	protected $widthItem;
 
