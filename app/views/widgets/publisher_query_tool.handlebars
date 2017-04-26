@@ -1,0 +1,177 @@
+<script id="pqt-front-template" type="text/x-handlebars-template">
+	<div class="pqt">
+		{{#if permission}}
+			<a href="#" class="create">Create...</a>
+		{{/if}}
+		<img class="logo" src="_img/{{logo}}" />
+		<div class="date-picker">
+			<span class="arrow-left">&#60;</span>
+			<input type="text" value="" />
+			<span class="arrow-right">&#62;</span>
+		</div>
+		<ul class="header">
+			<li class="time"><span></span></li>
+			<li class="user"><span></span></li>
+		</ul>
+		<ul class="content">
+			
+		</ul>
+	</div>
+</script>
+
+<script id="pqt-front-item" type="text/x-handlebars-template">
+{{#each items}}
+	<li class="{{status}}" data-id="{{id}}">
+		<span class="item-name"><span class="icon"></span><span class="name-inner">{{name}}</span> <span class="progress">{{progress}}</span></span>
+		<span class="time" data-time="{{time_started}}" data-finished="{{time_finished}}"></span>
+		<span class="user">{{initials}}</span>
+		<div class="details">
+			<div class="line"></div>
+			<div class="box-wrapper">
+				<div class="box">
+					<span class="info-name">{{name}}</span>
+					<span class="info-by"><span>Run By</span>{{first_name}} {{last_name}}</span>
+					<span class="info-time"><span>Time Started</span>{{time_started}}</span>
+					<span class="info-time"><span>Time Finished</span>{{time_finished}}</span>
+				</div>
+			</div>
+		</div>
+	</li>
+{{/each}}
+</script>
+
+<script id="pqt-back-template" type="text/x-handlebars-template">
+	<div class="pqt">
+		<a href="#" class="create">Back</a>
+		<img class="logo" src="_img/{{logo}}" />
+		<div class="report-name">
+			<input type="text" name="report-name" placeholder="Name your report" />
+		</div>
+		<div class="organisations dropdown">
+			<span><span></span>Organization</span>
+			<ul></ul>
+		</div>
+		<div class="exchanges dropdown">
+			<span><span></span>Exchange</span>
+			<ul></ul>
+		</div>
+		<div class="countries dropdown">
+			<span><span></span>Country</span>
+			<ul></ul>
+		</div>
+		<div class="options">
+			<div class="pmp">
+				<span><span></span>PMP</span>
+			</div>
+			<div class="oa">
+				<span><span></span>OA</span>
+			</div>
+		</div>
+		<div class="pmp-search">
+			<input type="text" name="pmpsearch" placeholder="Deal Id" />
+		</div>
+		<div class="urls">
+			
+		</div>
+		<input type="hidden" value="{{user_id}}" name="user_id" />
+		<div class="buttons">
+			<a herf="#" class="run">Run</a>
+		</div>
+	</div>
+</script>
+
+<script id="irt-back-template" type="text/x-handlebars-template">
+	<div class="pqt">
+		<a href="#" class="create">Back</a>
+		<img class="logo" src="_img/{{logo}}" />
+		<div class="report-name">
+			<input type="text" name="report-name" placeholder="Name your report" />
+		</div>
+		<div class="organisations dropdown">
+			<span><span></span>Organization</span>
+			<ul></ul>
+		</div>
+		<div class="exchanges dropdown">
+			<span><span></span>Exchange</span>
+			<ul></ul>
+		</div>
+		<div class="granularity dropdown loaded">
+			<span><span></span>Granularity</span>
+			<ul>
+				<li><label><input type="checkbox" data-id="Organization" checked disabled> Organization</label></li>
+				<li><label><input type="checkbox" data-id="Agency"> Agency</label></li>
+				<li><label><input type="checkbox" data-id="Advertiser"> Advertiser</label></li>
+				<li><label><input type="checkbox" data-id="Campaign"> Campaign</label></li>
+			</ul>
+		</div>
+		<div class="options">
+			<div class="pmpe">
+				<span><span></span>PMP-E</span>
+			</div>
+			<div class="oa">
+				<span><span></span>OA</span>
+			</div>
+		</div>
+		<div class="options">
+			<div class="pmp">
+				<span><span></span>PMP-D</span>
+			</div>
+			<div class="globaldeals">
+				<span><span></span>Global Deal</span>
+			</div>
+		</div>
+		<div class="pmp-search">
+			<input type="text" name="pmpsearch" placeholder="Deal Id" />
+		</div>
+		<div class="urls">
+			
+		</div>
+		<input type="hidden" value="{{user_id}}" name="user_id" />
+		<div class="buttons">
+			<a herf="#" class="run">Run</a>
+		</div>
+	</div>
+</script>
+
+<script id="qb-front-item" type="text/x-handlebars-template">
+{{#each items}}
+	<li class="{{status}}" data-id="{{id}}">
+		<span class="item-name"><span class="icon"></span><span class="name-inner">{{bucket_name}}</span> <span class="progress">{{progress}}</span></span>
+		<span class="status">{{status}}</span>
+		<span class="user"><span></span></span>
+		<div class="details">
+			<div class="line"></div>
+			<div class="box-wrapper">
+				<div class="box">
+					<span class="info-name"><span>Name</span> {{bucket_name}}</span>
+					<span class="info-by"><span>Status</span> {{status}}</span>
+					<span class="comment"><span>Comment</span> {{comment.result}}</span>
+					{{#if comment.missing_hours}}
+						<span class="about"><span>Missing Hours</span></span>
+						<ul>
+							{{#each comment.missing_hours}}
+								<li>{{this}}</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+					{{#if comment.late_hours}}
+						<span class="about"><span>Late Hours</span></span>
+						<ul>
+							{{#each comment.late_hours}}
+								<li>{{this}}</li>
+							{{/each}}
+						</ul>
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	</li>
+{{/each}}
+</script>
+
+<script id="pqt-back-url" type="text/x-handlebars-template">
+	<div class="url">
+		<input type="text" placeholder="Add URL" name="urls[]" />
+		<a href="#" class="add"><span></span></a>
+	</div>
+</script>

@@ -1,0 +1,48 @@
+<div class="table-holder">
+	<table class="main">
+		<thead>
+			<tr>
+				<th>
+					<div id="s_summary" class="title-1 sorting sorting<?php if ($extras['orderI'] == 'summary') echo '_'.strtolower($extras['order']); ?>">
+					Request
+					</div>
+				</th>
+				<th>
+					<div id="s_components" class="components sorting sorting<?php if ($extras['orderI'] == 'components') echo '_'.strtolower($extras['order']); ?>">
+						Product Category
+					</div>
+				</th>
+				<th>
+					<div id="s_status" class="sorting sorting<?php if ($extras['orderI'] == 'status') echo '_'.strtolower($extras['order']); ?>">
+						Current Phase
+					</div>
+				</th>
+				<th>
+					<div id="s_candidate_consid" class="candidateConsi sorting sorting<?php if ($extras['orderI'] == 'candidate_consid') echo '_'.strtolower($extras['order']); ?>">
+						Resolution
+					</div>
+				</th>
+				<th>
+					<div id="s_reporter" class="reporter sorting sorting<?php if ($extras['orderI'] == 'reporter') echo '_'.strtolower($extras['order']); ?>">
+						Reporter
+					</div>
+				</th>
+				<th>
+					<div id="s_created" class="sorting sorting<?php if ($extras['orderI'] == 'created') echo '_'.strtolower($extras['order']); ?>">
+						Created
+					</div>
+				</th>
+				<th>
+					<div id="s_labels" class="sorting sorting<?php if ($extras['orderI'] == 'labels') echo '_'.strtolower($extras['order']); ?>">
+						Label
+					</div>
+				</th>
+				<th>
+					<div id="s_gear" class="td_gear"></div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</div>

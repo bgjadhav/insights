@@ -1,0 +1,69 @@
+/*orgs and agencies*/
+
+#main #TopOrganisations tbody td , #main #TopAgencies tbody td  {
+	padding: 3px 10px;
+}
+#main #TopOrganisations span.first , #main #TopAgencies span.first {
+	font-size: 15px;
+	color: #97d23b;
+	font-weight: bold;
+	margin-top: 3px;
+	display: inline-block;
+}
+#main #TopOrganisations thead th:nth-child(1) , #main #TopAgencies thead th:nth-child(1)  {
+	width:20px;
+	max-width:20px;
+}
+#main #TopOrganisations thead th:nth-child(2) {
+	width:125px;
+	max-width:125px;
+}
+#main #TopAgencies tbody td:nth-child(6)  {
+	min-width:85px;
+}
+
+#TopOrganisations .search-icon {
+	display: none;
+}
+
+#BidsClearRatioExchange .chart header {
+	color: #5faeec;
+}
+
+.forecast {
+	color: #cd1116;
+}
+
+.actual {
+	color: #808080;
+}
+.target {
+	color: #0000CC;
+}
+.targetAverage {
+	color: #4C9900;
+}
+
+.refresh {
+	display:none;
+	color: #3fa9f5;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+#GlobalAccountsDashboard #legend {
+	float: none;
+	font-size: 20px;
+	color: #3fa9f5;
+}
+#GlobalAccountsDashboard .table-holder {
+	max-height: 500px;
+	overflow: auto;
+}
+#GlobalAccountsDashboard th {
+	width: auto !important;
+}
+
+#GlobalAccountsDashboard .results tbody tr:first-child {
+	background-color: #d7eeff;
+}

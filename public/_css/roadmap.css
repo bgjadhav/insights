@@ -1,0 +1,315 @@
+body {
+	background: #efefea;
+}
+
+.modal {
+    z-index: 100000;
+}
+
+#loading {
+	background: #fff;
+	overflow: hidden;
+	clear: both;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#roadmap {
+	float: left;
+	padding: 30px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: arial;
+	font-size: 12px;
+}
+#roadmap header {
+	font-size: 12px;
+	font-family: "arial";
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #666666;
+	overflow: hidden;
+}
+#roadmap header div {
+	float: left;
+	margin-bottom: 5px;
+}
+#roadmap header .version {
+	margin-left: 52px;
+}
+#roadmap .right {
+	float: right !important;
+	text-align: center;
+}
+#roadmap .release {
+	width: 100px;
+}
+#roadmap .tickets {
+	width: 70px;
+}
+#roadmap .quarter {
+	width: 40px;
+}
+#roadmap .stories {
+	width: 60px;
+}
+#roadmap .image {
+	width: 42px;
+	margin-left: 46px;
+}
+#roadmap .add {
+	width: 50px;
+}
+
+.rows-holder {
+	width: 100%;
+	margin-bottom: 40px;
+}
+.rows-holder .row {
+	background: #fff;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+}
+.rows-holder .row div {
+	height: 42px;
+	line-height: 42px;
+}
+
+.rows-holder .status {
+	width: 42px;
+	float: left;
+	border-right: 1px solid #efefea;
+	border-bottom: 1px solid #efefea;
+}
+.rows-holder .status span {
+	margin: 13px auto 0;
+	border-radius: 10px;
+	width: 15px;
+	height: 15px;
+	background: #000;
+	display: block;
+}
+.rows-holder .progress-none .status {
+	background: #f9f9f9;
+}
+.rows-holder .progress-none .status span {
+	background: #fff;
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.05);
+}
+.rows-holder .progress-done .status span {
+	background: #99d142;
+}
+.rows-holder .progress-ok .status span {
+	background: #ff9a30;
+}
+.rows-holder .progress-late .status span {
+	background: #ff3131;
+}
+.rows-holder .version {
+	float: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border-bottom: 1px solid #efefea;
+	color: #b3b3b3;
+	padding-right: 10px;
+	position: relative;
+}
+.rows-holder .row .name {
+	color: #4d4d4d;
+	cursor: pointer;
+	font-weight: bold;
+}
+.rows-holder .version .description {
+	color: #b3b3b3;
+	font-weight: normal;
+	margin-left: 10px;
+}
+.rows-holder .arrow {
+	visibility: hidden;
+	display: block;
+	float: left;
+	width: 0;
+	height: 0;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 6px solid #a5a5a5;
+	margin: 17px 10px 0 10px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	cursor: pointer;
+}
+.rows-holder .has-children .arrow {
+	visibility: visible;
+}
+.rows-holder .active .arrow {
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.rows-holder .version a.info {
+	width: 12px;
+	height: 12px;
+	background: url('../_img/jira/info.png');
+	display: block;
+	float: left;
+	margin: 15px 8px 0 12px;
+}
+.rows-holder .right div {
+	float: left;
+	border-left: 1px solid #efefea;
+	border-bottom: 1px solid #efefea;
+	color: #b3b3b3;
+}
+.rows-holder .add {
+	font-family: 'Flaticon';
+	color: #818181;
+	cursor: pointer;
+}
+
+.rows-holder .extra {
+	background: #f9f9f9;
+	overflow: hidden;
+	display: none;
+}
+.rows-holder .extra .sub-row {
+	overflow: hidden;
+	border-bottom: 1px solid #efefea;
+}
+.rows-holder .extra .sub-row div {
+	height: 42px;
+	line-height: 42px;
+	float: left;
+}
+.rows-holder .image {
+	text-align: center;
+	border-right: 1px solid #efefea;
+}
+.rows-holder .image img {
+	width: 20px;
+	height: 20px;
+	margin-top: 11px;
+}
+.rows-holder .extra .name {
+	margin-left: 12px;
+}
+.rows-holder .extra .release {
+	width: 180px;;
+}
+
+.rows-holder .priority {
+	color: #ff3131;
+}
+
+#user-dropdown img {
+	width: 20px;
+	height: 20px;
+}
+
+.rows-holder .quarter {
+	position: relative;
+	cursor: pointer;
+}
+.rows-holder .quarter ul {
+	list-style: none;
+	position: absolute;
+	top: 1px;
+	right: 40px;
+	overflow: hidden;
+/*	width: 160px;*/
+	width: 0px;
+	height: 40px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.rows-holder .quarter ul li {
+	width: 35px;
+	display: inline-block;
+	border-left: 1px solid #efefea;
+	background: #fff;
+	padding-left: 2px;
+}
+.rows-holder .quarter span img {
+	width: 15px;
+	height: 15px;
+}
+
+#roadmap h1 {
+	font-size: 30px;
+	color: #3FA9F5;
+	font-weight: lighter;
+	font-family: "Helvetica Neue", "Roboto", Helvetica, arial;
+	margin: 0 0 15px;
+}
+
+.rows-holder .row .tooltips {
+	background: #fff;
+	border-radius: 4px;
+	position: absolute;
+	top: 4px;
+	left: 35px;
+	height: 35px;
+	z-index: 999;
+	border: 1px solid #eee;
+	padding: 0 20px;
+	line-height: 35px;
+	display: none;
+	color: #4d4d4d;
+	font-weight: bold;
+}
+
+.rows-holder .row .tooltips a {
+	color: #4d4d4d;
+}
+
+@media all and (max-width: 934px) {
+	#roadmap .right {
+		float: none !important;
+	}
+	.rows-holder .row div {
+		border-bottom: 1px solid #efefea;
+	}
+	.rows-holder .row .version {
+		height: 84px;
+		padding: 0;
+	}
+	.rows-holder .row .name {
+		float: left;
+	}
+	.rows-holder .quarter {
+		position: absolute;
+		top: 0;
+		right: 0px;
+	}
+	.rows-holder .version .description {
+		clear: both;
+		float: left;
+		border-top: 1px solid #efefea;
+		margin: 0;
+		padding: 0 20px;
+		width: 100%;
+	}
+	#roadmap .right {
+		position: relative;
+		padding-right: 30px;
+	}
+	#roadmap .release {
+		width: 73px;
+	}
+	.rows-holder .status {
+		border-right: none;
+	}
+	#roadmap header {
+		display: none;
+	}
+	#roadmap .tickets {
+		width: 54px;
+	}
+	#roadmap .stories {
+		width: 40px;
+	}
+}

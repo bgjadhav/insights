@@ -1,0 +1,29 @@
+<script id="product-template" type="text/x-handlebars-template">
+<div class="item-list">
+	<div class="row progress-{{priority}}" data-id="{{issue_id}}">
+		<div class="right">
+			<div class="components">{{first_component}}</div>
+			<div class="stories">{{status}}</div>
+			<div class="stories candidateConsi">{{candidate_consid}}</div>
+			<div class="stories reporter">{{reporter}}</div>
+			<div class="stories">{{created}}</div>
+			<div class="stories labels"><span class="title">{{labels_title}}</span></div>
+		</div>
+		<div class="version">
+			<span class="" data-title="Info"><a class="info"></a></span>
+			<span class="name"><span class="nameProd" data-title="{{summary}}"><a href="{{open_tracking_url}}" target="_blank">{{summary}}</a></span></span>
+		</div>
+	</div>
+	<div class="extra">
+		<div class="sub-row">
+			<div class="button">
+				<a href="#">Details</a>
+			</div>
+			<div class="status-description">
+				<span class="info" id="overv_{{issue_id}}"></span>
+				<span class="description-detail" id="desc_{{issue_id}}"></span>
+			</div>
+		</div>
+	</div>
+</div>
+</script>

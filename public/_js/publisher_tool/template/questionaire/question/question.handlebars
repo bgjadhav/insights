@@ -1,0 +1,36 @@
+<script id="publisher_tool_questionaire_manage_question" type="text/x-handlebars-template">
+    <div id="question-manager-nav" class="display-table" style="margin-bottom:-19px;">
+        <div class="row">
+            <div class="cell ten">
+                <h1 class="title">Publisher Knowledge Base</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell ten">
+                <div class="actions">
+                    <ul>
+                        <li class="question" data-fooltip="Select a question to edit">
+                            <select class="chosen-select dropdown" data-placeholder="Question" style="width:350px;" tabindex="1">
+                                <option value=""></option>
+                                {{#each questions}}
+                                    <option style="cursor: pointer;" value="{{QUESTION_ID}}">{{QUESTION_TITLE}}</option>
+                                {{/each}}
+                            </select>
+                        </li>
+                        <li><a href=""
+                               id="edit"
+                               class="btn blue">Edit</a></li>
+                        <li><a href=""
+                               id="add"
+                               class="btn"
+                               data-fooltip="Add a new question">Add Question</a></li>
+                        <li><a href=""
+                               id="restore"
+                               class="btn"
+                               data-fooltip="Restore a removed/depreciated question">Restore Question</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

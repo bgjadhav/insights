@@ -1,0 +1,210 @@
+{{#if report_status}}
+	<div class="cover">
+	</div>
+	<div class="cover-box">
+		<div class="img-wait"></div>
+		<h1></h1><br>
+		<span class="cover-message"></span><br>
+		<br><span class="cover-extra"></span>
+	</div>
+	{{#if extras.org_updates}}
+		<a href="<?php echo URL::to('/'); ?>/analytics/update-organisations" class="update-data">Update Data</a>
+	{{/if}}
+
+	{{#if range_selector}}
+	<div class="range_selector">
+		<ul>
+			{{#each range_selector}}
+				<li {{#if @first}}class="active"{{/if}}>{{this}}</li>
+			{{/each}}
+		</ul>
+	</div>
+	{{/if}}
+	{{#if title}}
+		<h1>{{title}}
+		{{#ifPodLeng title 'Pod/Client Product Usage Dashboard'}}
+		{{/ifPodLeng}}
+		</h1>
+	{{else}}
+		<h1>{{sections.title}}</h1>
+	{{/if}}
+
+	{{#if jira_performance}}
+	{{else}}
+		<div class="date_picker">
+			{{#if date_picker}}
+				<div class="date">
+					<span class="date"></span>
+					<input class="start name" data-value="{{date_picker.start}}" />
+				</div>
+				<div class="date">
+					<span class="date"></span>
+					<input class="end name" data-value="{{date_picker.end}}" />
+				</div>
+			{{/if}}
+		</div>
+	{{/if}}
+
+
+	{{#if pods}}
+		<div class="pod-dropdown">
+			<span class="name" id="pods">Pods <span class="arrow-down"></span></span>
+			<ul>
+				{{#each pods}}
+					<li><span><input type="checkbox" id="pod{{@key}}" checked /> <label for="pod{{@key}}">{{@key}}</label></span>
+						<ul>
+							{{#each this}}
+								<li>
+									<input type="checkbox" name="{{nice}}" id="pod{{nice}}" value="{{name}}" checked />
+									<span class="icon-{{nice}} icon"></span>
+									<label class="pod" for="pod{{nice}}">{{name}}</label>
+								</li>
+							{{/each}}
+						</ul>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	{{/if}}
+	{{#if filtersarray}}
+		<div class="filters">
+			{{#each filtersarray}}
+				<div class="dropdown">
+					<span class="name" id="{{@key}}">{{@key}} <span class="arrow-down"></span></span>
+					<ul class="{{@key}}">
+						{{#Has_Alls @key}}{{/Has_Alls}}
+
+						{{#each this}}
+							{{#if this.name }}
+								<li>
+									<input id="{{@key}}_{{this.id}}" type="checkbox" value="{{this.id}}" {{this.checked}} />
+									<label>{{this.name}}</label>
+								</li>
+							{{/if}}
+						{{/each}}
+					</ul>
+
+				</div>
+			{{/each}}
+		</div>
+	{{/if}}
+
+	{{#if jira_performance}}
+		<div class="date_picker">
+			{{#if date_picker}}
+				<div class="date">
+					<span class="date"></span>
+					<input class="start name" data-value="{{date_picker.start}}" />
+				</div>
+				<div class="date">
+					<span class="date"></span>
+					<input class="end name" data-value="{{date_picker.end}}" />
+				</div>
+			{{/if}}
+		</div>
+	{{else}}
+		<span class="search-icon">Search</span>
+	{{/if}}
+
+	<span class="refresh name">Refresh</span>
+
+
+	{{#if checkboxes}}
+		<div class="checkboxes">
+			{{#each checkboxes}}
+				<div class="checkboxes-row {{@key}}" id="checkboxrow_{{@key}}">
+					{{#each this}}
+						<div class="checkbox">
+							<input type="checkbox" name="{{this}}" id="checkbox{{this}}" value="{{@key}}" checked />
+							<label class="checkbox{{@key}}" for="checkbox{{this}}">{{this}}</label>
+						</div>
+					{{/each}}
+				</div>
+			{{/each}}
+		</div>
+	{{/if}}
+
+	<div id="options">
+		{{#if column_selector}}
+			<div class="dropdown">
+				<span class="name">Show Table Columns <span class="arrow-down"></span></span>
+				<ul>
+					<li class="options">
+						<span class="select">Select All</span>
+						<span class="clear">Clear All</span>
+					</li>
+				</ul>
+			</div>
+		{{/if}}
+
+		{{#if download}}
+			<div id="downloadData" class="download" data-type="{{download}}">Export<span></span></div>
+			<div class="export-form"><form method="post" action=""><input type="submit" /></form></div>
+		{{/if}}
+	</div>
+
+	<div class="UserOptions">
+		{{#if type}}
+		<div class="dropdown type">
+		<span class="name">View<span class="arrow-down"></span></span>
+			<ul>
+				{{#each nameTypesarray}}
+					<li {{#if @first}}class="active"{{/if}}>{{this.name}}<span>{{this.id}}</span></li>
+				{{/each}}
+			</ul>
+		</div>
+		{{/if}}
+		<div class="dropdown optionsType">
+			<span class="name">Options<span class="arrow-down"></span></span>
+			<ul id="optionType"></ul>
+		</div>
+	</div>
+	
+	{{#if definitions}}
+		<div class="definitions">
+			<h1>Definitions</h1>
+			<table>
+				{{#each definitions}}
+					<tr>
+						<td class="first">{{@key}}</td>
+						<td>{{this}}</td>
+					</tr>
+				{{/each}}
+			</table>
+		</div>
+	{{/if}}
+	
+	{{#if disclaimer}}
+		<div class="definitions">
+			<table>
+				<tr>
+					<td class="first">Disclaimer</td>
+					<td>{{disclaimer}}</td>
+				</tr>
+			</table>
+		</div>
+	{{/if}}
+
+	<div class="results"></div>
+
+	{{#if pagination}}
+		<div id="paginationDash{{id}}" class="dropdown pagination paginationDash">
+			<span>More</span>
+		</div>
+		<div id="moreDash{{id}}" class="dropdown pagination moreDash">
+			<?php echo HTML::image('_img/loading.gif'); ?>
+		</div>
+		<div id="paginationStopDash{{id}}" class="paginationStopDash">
+			<span>Completed</span>
+		</div>
+	{{/if}}
+
+	{{#ifNoPodLeng title 'Pod/Client Product Usage Dashboard'}}
+	{{/ifNoPodLeng}}
+{{else}}
+	<div id="maintenance">
+		<h1>{{title}} - Report currently down for maintenance</h1>
+		<p>The data for this report is currently undergoing maintenance. The report will be reinstated as soon as possible.</p>
+		<p><a href="../../../../media/4/deal-reporting/8/global-deal-by-exchange">Please click here for up to date accurate metrics</a></p>
+	</div>
+{{/if}}

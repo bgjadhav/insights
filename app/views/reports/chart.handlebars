@@ -1,0 +1,20 @@
+<div id="chart_{{id}}" class="chart {{moreclass}}">
+{{#if key}}
+	<header>
+		{{key}}
+		<span class="critic">{{label_critic}}</span>
+<!--		<span class="export"></span>-->
+	</header>
+{{/if}}
+	<div class="content">
+		<div class="holder"></div>
+		<div class="options">
+			<ul>
+				<li data-type="image/png">Download PNG</li>
+				<li data-type="image/jpeg">Download JPG</li>
+				<li data-type="application/pdf">Download PDF</li>
+				<li data-type="image/svg+xml">Download SVG</li>
+			</ul>
+		</div>
+	</div>
+</div>

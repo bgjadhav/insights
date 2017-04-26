@@ -1,0 +1,446 @@
+
+#main .dataTables_scrollBody tr:hover td {
+	background-color: #EBF3F7;
+}
+
+#main table thead th {
+	background-image: none;
+	background-position: none;
+	background-repeat: none;
+	background: #ccc;
+	color: #000;
+	border: none;
+	padding: 1px 5px 1px 5px;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+#main table thead th:first-child  {
+	border-left: 1px solid #999;
+    border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-top-left-radius: 2px;
+	-webkit-border-top-left-radius:2px;
+	-moz-border-top-left-radius:2px;
+}
+
+#main table thead th div {
+	min-width: 40px !important;
+	width: auto !important;
+}
+
+
+#main table thead #th_major {
+	width: 10px !important;
+	padding: 1px 5px 1px 2px;
+}
+
+#main table tbody td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 6px;
+	padding-left: 5px;
+	border-bottom: 1px solid #999;
+}
+
+#main th.td_target_release{
+	padding-left: 5px;
+}
+
+/*
+#main td.td_target_release{
+	padding-left: 5px;
+}
+*/
+
+
+@media (-webkit-min-device-pixel-ratio:0) {
+	#main table tbody td {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 5px;
+		padding-left: 5px;
+		border-bottom: 1px solid #999;
+	}
+
+	#main th.td_target_release{
+		padding-left: 5px;
+	}
+
+}
+
+#cso.product .sorting {
+	background: #ccc url('../../_img/table_sort_blue.png') 100% 1px no-repeat;
+	cursor: pointer;
+}
+
+
+#cso.product #th_major .sorting {
+	background: #ccc url('../../_img/table_sort_blue.png') 100% 4px no-repeat;
+	cursor: pointer;
+}
+
+#cso.product .sorting_desc {
+	background-position: 100% -49px;
+}
+
+#cso.product .sorting_asc {
+	background-position: 100% -92px;
+}
+
+#cso.product #th_major .sorting_desc {
+	background-position: 100% -46px;
+}
+
+#cso.product #th_major .sorting_asc {
+	background-position: 100% -89px;
+}
+
+#main .dataTables_scrollHeadInner {
+	background: #f7f7f7;
+}
+
+#main table tbody td:first-child {
+	border-left: 1px solid #999;
+}
+
+#main table tbody td:last-child {
+	border-right: 1px solid #999;
+}
+
+#main .dataTables_scroll {
+	border: none;
+}
+
+#main .dataTables_scrollBody {
+	border-top: none;
+}
+
+#main .description-row {
+	text-align: right;
+	font-weight: bold;
+	vertical-align:top;
+	min-width: 205px !important;
+	width: 205px !important;
+}
+
+#main.requests .description-row {
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+    min-width: 100px !important;
+    width: 100px !important;
+}
+
+#main .table-description tbody tr:hover td {
+	background-color: transparent !important;
+}
+
+#main .table-description tbody td {
+	border:none;
+}
+
+#main .table-description tbody td.full_summary {
+	font-weight: bold;
+	padding-right:200px;
+}
+
+#main table tbody td.details-control {
+	background: url('../../_img/jira/expand.png') 7px no-repeat;
+	background-size: 8px 8px;
+	padding-left: 25px;
+	width: 385px;
+	min-width: 385px;
+	max-width: 385px;
+}
+
+
+
+#main.requests table tbody td.details-control {
+	padding-left: 24px;
+}
+
+#main.requests table tbody td.details-control, #main.requests table tbody th.details-control {
+	width: 385px !important;
+	min-width: 385px !important;
+	max-width: 385px !important;
+}
+
+#main.requests .dataTables_scrollHead table thead th:first-child{
+	padding: 3px 4px 3px 5px !important;
+
+}
+
+#s_epic_name {
+	width: 373px;
+	min-width: 373px;
+}
+
+#s_summary {
+	width: 385px;
+	min-width: 385px;
+}
+
+#main table tbody td.td_status , #s_status{
+	width: 180px  !important;
+	min-width: 180px !important;
+}
+
+#main table tbody td.td_geo , #s_geo{
+	width: 120px;
+	min-width: 120px;
+}
+
+#main table tbody td.td_target_open_beta, #s_o_target_open_beta{
+	width: 88px;
+	min-width: 88px;
+}
+
+#main table tbody td.td_candidate_consid, #s_candidate_consid{
+	min-width: 120px;
+	min-width: 120px;
+}
+
+#s_o_target_release{
+	width: 88px;
+	min-width: 88px;
+}
+
+#main table tbody td.td_target_release{
+	width: 88px;
+	min-width: 88px;
+	margin:0px;
+	height: 34px;
+	padding:0px;
+	padding-left:0px;
+}
+
+#main table tbody td.td_created{
+	width: 120px;
+	min-width: 120px !important;
+	max-width: 120px !important;
+}
+
+#main table tbody td.td_target_closed_beta, #s_o_target_closed_beta{
+	width: 100px;
+	min-width: 100px;
+}
+
+#main table tbody td.td_component, #s_components{
+	width: 200px !important;
+	min-width: 200px !important;
+}
+
+#main table tbody td.audience_platform,
+#main table tbody td.connectedid,
+#main table tbody td.helix,
+#main table tbody td.audience{
+	background: #fde8de;
+}
+
+#main table tbody td.attribution,
+#main table tbody td.optimization,
+#main table tbody td.intelligence{
+	background: #e2f4e5;
+}
+
+#main table tbody td.omni_channel_general,
+#main table tbody td.omni_channel_display_native,
+#main table tbody td.omni_channel_mobile,
+#main table tbody td.omni_channel_video,
+#main table tbody td.omni_channel_social,
+#main table tbody td.omni_channel_audio,
+#main table tbody td.omni_channel_tv,
+#main table tbody td.creatives,
+#main table tbody td.marketplaces,
+#main table tbody td.lightbox,
+#main table tbody td.media{
+	background: #d9f3fc;
+}
+
+
+#main table tbody td.performance_package,
+#main table tbody td.universal_audience_match,
+#main table tbody td.performance_solutions{
+	background: #e8e0ee;
+}
+
+#main table tbody td.app_store,
+#main table tbody td.data_platform,
+#main table tbody td.financial_platform,
+#main table tbody td.infrastructure,
+#main table tbody td.platform_tools,
+#main table tbody td.infrastructure_internal_platform,
+#main table tbody td.unified_data_platform,
+#main table tbody td.ips{
+	background: #ffffd9;
+}
+
+#main table tbody td.td_release_phase, #s_release_phase{
+	width: 178px;
+	min-width: 178px;
+}
+
+#main table tbody tr.shown td.details-control {
+	background: url('../../_img/jira/expanded.png') 7px no-repeat;
+	background-size: 8px 8px;
+}
+
+#main .dataTables_scrollBody tr:hover td.details-control {
+	background-color: #EBF3F7;
+}
+
+#main table tbody td img {
+	width: auto;
+	height: auto;
+	margin: 0 auto 20px;
+}
+
+#main table tbody td.loading {
+	border: none !important;
+}
+
+#main table tbody tr.nosearched {
+	border: 1px solid #999;
+	border-top: none;
+	border-bottom: 1px solid #999;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-webkit-border-left-radius:2px;
+	-webkit-border-right-radius:2px;
+	-moz-border-left-radius:2px;
+	-moz-border-right-radius:2px;
+}
+
+#main table tbody tr.nosearched td {
+	border: 1px solid #999;
+	margin:0px;
+	padding:0px;
+	border: 1px solid #999;
+	border-top: none;
+	border-bottom: 1px solid #999;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	-webkit-border-left-radius:2px;
+	-webkit-border-right-radius:2px;
+	-moz-border-left-radius:2px;
+	-moz-border-right-radius:2px;
+}
+
+#main table.table-description tbody td:first-child {
+	border: none;
+}
+
+#main table.table-description tbody td.full_summary {
+	padding-left:67px;
+}
+
+#main table thead th:last-child  {
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	border-top-right-radius: 2px;
+	-webkit-border-top-right-radius:2px;
+	-moz-border-top-right-radius:2px;
+
+}
+
+#main table.table-description tbody td:last-child {
+	border: none;
+}
+
+#main .table-holder {
+	clear: both;
+	width: 100%;
+	margin-bottom: 0px;
+	background: #fff;
+	height: 100%;
+}
+
+.product tbody td div.tRelease {
+	color: #BC0A0A;
+	margin: 0px;
+	padding: 0px;
+	background: url('../../_img/prod_triangle.png') no-repeat;
+	background-position: left bottom;
+	padding-left: 0px;
+	padding-top: 0px;
+	height: 100%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.product tbody td div.tRelease i {
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 19%;
+}
+
+.product tbody td div.tReleaseNo {
+	padding-left: 5px;
+}
+.product tbody td div.tReleaseAct {
+	width: 100px;
+	color: #BC0A0A;
+	border: none;
+}
+
+#main .dataTables_scrollBody tr:hover td{
+	background-color: #EBF3F7;
+}
+
+#main .dataTables_scrollBody tr td.td_major{
+	min-width: 36px !important;
+	width: 36px !important;
+}
+
+#cso.product #s_major {
+	min-width: 39px !important;
+	width: 39px !important;
+}
+
+#main .loading img {
+	margin: 0 auto 20px 5px;
+}
+
+#main table.table-description tbody td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#main table tbody td, .product tbody td div.tReleaseNo, .linkToReleasePhase a {
+	color: #4D4D4D;
+}
+
+#main .nameProd a{
+	color: #4d4d4d;
+}
+
+#roadmap i.security_deleted {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#main table.table-description tbody td.descr_value_description p {
+	line-height: 1.4;
+}
+
+#roadmap .description_content {
+	background-color: #ccc;
+}
+
+#main table tbody td {
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+#main table tr td #noResults {
+	font-size: 14px;
+	font-family: Arial, Helvetica, san serif;
+	font-style: italic;
+	margin: 10px;
+	font-weight: normal;
+}

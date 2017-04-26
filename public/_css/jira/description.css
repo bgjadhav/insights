@@ -1,0 +1,364 @@
+
+#main table.table-description tbody td.descr_value_background,
+#main table.table-description tbody td.descr_value_requirements_acceptance_criteria,
+#main table.table-description tbody td.descr_value_out_of_scope,
+#main table.table-description tbody td.descr_value_weekly_status,
+#main table.table-description tbody td.descr_value_description {
+	font-size: 12px;
+	padding-right: 10px;
+	line-height: auto;
+	color: #4D4D4D;
+	margin-top: 0px;
+	border: 0px;
+	padding-top: 5px;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background tbody td,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria tbody td,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope tbody td,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status tbody td,
+#roadmap.intel .description_content .table-description .descr_value_description tbody td {
+	color: #4D4D4D;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h1,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h1,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h1,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h1,
+#roadmap.intel .description_content .table-description .descr_value_description h1 {
+	font-size: 14px;
+	line-height: 1.25;
+	margin: 20px 0 0 0;
+	color: #292929;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	font-weight: normal;
+	text-transform: none;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h2,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h2,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h2,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h2,
+#roadmap.intel .description_content .table-description .descr_value_description h2 {
+	font-size: 14px;
+	line-height: 1.5;
+	margin: 20px 0 0 0;
+	color: #292929;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	font-weight: normal;
+	text-transform: none;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h3,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h3,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h3,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h3,
+#roadmap.intel .description_content .table-description .descr_value_description h3 {
+	font-size: 14px;
+	line-height: 1.5;
+	margin: 20px 0 0 0;
+	color: #292929;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	font-weight: normal;
+	text-transform: none;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h4,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h4,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h4,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h4,
+#roadmap.intel .description_content .table-description .descr_value_description h4 {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.25;
+	margin: 20px 0 0 0;
+	color: #292929;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	text-transform: none;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h5,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h5,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h5,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h5,
+#roadmap.intel .description_content .table-description .descr_value_description h5 {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.42857143;
+	text-transform: none;
+	margin: 14px 0 0 0;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h6,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h6,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h6,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h6,
+#roadmap.intel .description_content .table-description .descr_value_description h6 {
+	color: #707070;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 1.66666667;
+	text-transform: uppercase;
+	margin: 14px 0 0 0;
+	float: none;
+	border-spacing: 0;
+	list-style: none;
+	word-wrap: break-word;
+	font-family: Arial,sans-serif;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background h1:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background h2:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background h3:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background h4:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background h5:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background h6:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h1:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h2:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h3:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h4:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h5:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria h6:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h1:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h2:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h3:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h4:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h5:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope h6:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h1:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h2:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h3:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h4:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h5:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status h6:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h1:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h2:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h3:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h4:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h5:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description h6:first-child {
+	margin-top: -1px;
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description p:first-child {
+	margin-top: 0px;
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background p,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p,
+#roadmap.intel .description_content .table-description .descr_value_description p {
+	margin: 10px 0 5px 0;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background p:empty,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria p:empty,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope p:empty,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status p:empty,
+#roadmap.intel .description_content .table-description .descr_value_description p:empty {
+	margin: 0px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background pre,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria pre,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope pre,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status pre,
+#roadmap.intel .description_content .table-description .descr_value_description pre {
+	margin: 10px 0 0 0;
+	padding-left: 20px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background ul,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria ul,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope ul,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status ul,
+#roadmap.intel .description_content .table-description .descr_value_description ul,
+#roadmap.intel .description_content .table-description .descr_value_background ol,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria ol,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope ol,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status ol,
+#roadmap.intel .description_content .table-description .descr_value_description ol,
+#roadmap.intel .description_content .table-description .descr_value_background dl,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria dl,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope dl,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status dl,
+#roadmap.intel .description_content .table-description .descr_value_description dl {
+	margin: 10px 0 0 0;
+	padding-left: 20px;
+}
+
+
+#roadmap.intel .description_content .table-description .descr_value_background ul:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria ul:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope ul:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status ul:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description ul:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background ol:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria ol:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope ol:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status ol:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description ol:first-child,
+#roadmap.intel .description_content .table-description .descr_value_background dl:first-child,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria dl:first-child,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope dl:first-child,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status dl:first-child,
+#roadmap.intel .description_content .table-description .descr_value_description dl:first-child {
+	margin-top: 0px;
+	padding-top: 0px;
+	border-top: 0px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background blockquote,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria blockquote,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope blockquote,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status blockquote,
+#roadmap.intel .description_content .table-description .descr_value_description blockquote {
+	border-left: 1px solid #ccc;
+	color: #707070;
+	margin-left: 19px;
+	margin: 10px 0 10px 0;
+	padding: 10px 20px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background cite::before,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria cite::before,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope cite::before,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status cite::before,
+#roadmap.intel .description_content .table-description .descr_value_description cite::before {
+	content: "\2014 \2009";
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background .monospaced,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria .monospaced,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope .monospaced,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status .monospaced,
+#roadmap.intel .description_content .table-description .descr_value_description .monospaced {
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	padding: 1px 3px;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background blockquote.code,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria blockquote.code,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope blockquote.code,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status blockquote.code,
+#roadmap.intel .description_content .table-description .descr_value_description blockquote.code {
+	border: 1px dashed #4D4D4D;
+	border-radius: 5px !important;
+	color: #000;
+	overflow: auto;
+	max-height: 30em;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background blockquote p.code,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria blockquote p.code,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope blockquote p.code,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status blockquote p.code,
+#roadmap.intel .description_content .table-description .descr_value_description blockquote p.code {
+	overflow: auto;
+	max-height: 30em;
+	line-height: 1.4em !important;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background table,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria table,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope table,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status table,
+#roadmap.intel .description_content .table-description .descr_value_description table {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	margin: 10px 0 10px 0;
+	width: auto;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background table td,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria table td,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope table td,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status table td,
+#roadmap.intel .description_content .table-description .descr_value_description table td {
+	border: 1px solid #000;
+	background: #ccc;
+	padding: 3px 4px 3px 4px;
+	text-align: center;
+}
+
+#roadmap.intel .description_content .table-description .descr_value_background table td.head,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria table td.head,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope table td.head,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status table td.head,
+#roadmap.intel .description_content .table-description .descr_value_description table td.head {
+	border: 1px solid #000;
+	background: #ccc;
+	padding: 3px 4px 3px 4px;
+	text-align: center;
+}
+
+
+#roadmap.intel .description_content .table-description .descr_value_background table td.headPanel,
+#roadmap.intel .description_content .table-description .descr_value_requirements_acceptance_criteria table td.headPanel,
+#roadmap.intel .description_content .table-description .descr_value_out_of_scope table td.headPanel,
+#roadmap.intel .description_content .table-description .descr_value_weekly_status table td.headPanel,
+#roadmap.intel .description_content .table-description .descr_value_description table td.headPanel {
+	border: 1px solid #000;
+	background: #ccc;
+	padding: 3px 4px 3px 4px;
+	text-align: center;
+}

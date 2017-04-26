@@ -1,0 +1,44 @@
+#analytics {
+	float: left;
+	width: 100%;
+}
+#online-users-count {
+	font-size: 100px;
+	text-align: center;
+}
+#online-users-count span {
+	font-weight: bold;
+}
+.charts {
+	height: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.charts .bar {
+	width: 1px;
+	background: #000;
+	margin-right: 1px;
+	float: left;
+	min-height: 1px;
+}
+
+#visits-chart {
+	position: relative;
+	height: 150px;
+	width: 100%;
+	margin: 50px 0 0 0;
+}
+#visits-day {
+	z-index: 10;
+}
+#visits-day .bar {
+	background: #000;
+	opacity: 0.7;
+}
+#visits-day-last-week .bar {
+	background: #999;
+	opacity: 0.8;
+}

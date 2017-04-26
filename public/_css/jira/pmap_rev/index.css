@@ -1,0 +1,47 @@
+#pmap-rev {
+    background: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    border: 20px solid #efefea;
+    font-family: arimo, arial;
+}
+
+#pmap-rev h1.title {
+    padding: 20px;
+    font-size: 30px;
+    color: #3fa9f5;
+    font-weight: lighter;
+    font-family: "Helvetica Neue", "Roboto", Helvetica, arial;
+}
+
+#table-section {
+	padding: 20px;
+}
+
+#pmap-rev table {
+	border-collapse: collapse;
+	padding: 15px;
+    width: 100%;
+    text-align: left;
+}
+
+#pmap-rev table thead {
+	background-color: #3fa9f5;
+}
+
+#pmap-rev table th {
+	color: #fff;
+	padding:10px;
+	font-weight: normal;
+	border: 1px solid #efefea;
+}
+
+#pmap-rev table tbody {
+	color: #808080;
+}
+
+#pmap-rev table td {
+	color: #808080;
+	border: 1px solid #efefea;
+	padding: 10px;
+}

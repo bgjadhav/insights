@@ -1,0 +1,13 @@
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+/vendor/*
+bootstrap/compiled.php
+update_repo.sh
+/app/config/reports/report.php
+/app/config/reports/tmp__report.php
+/app/storage/myqueue_supervisord.log
+.brackets.json

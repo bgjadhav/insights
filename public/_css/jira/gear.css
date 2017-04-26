@@ -1,0 +1,332 @@
+.td_gear {
+	min-width: 15px !important;
+	max-width: 15px !important;
+	width: 15px !important;
+}
+table tbody td.td_gear div {
+	min-width: 15px !important;
+	max-width: 15px !important;
+	width: 15px !important;
+}
+
+table tbody td.td_gear{
+	width: 15px;
+	min-width: 15px;
+	max-width: 15px;
+	background-color: #f7f7f7;
+	background: url('../../_img/jira/gear.png') 5px 10px no-repeat;
+}
+
+table tbody td.td_gear:hover{
+	cursor:pointer;
+}
+
+table tbody td.td_gear div.arrow_gear{
+	display: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: 99999996;
+	right: 10px;
+	border-style: solid;
+	top: 11px;
+	border-width: 7px 1px 7px 9px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+table tbody td.td_gear ul.gear{
+	overflow: hidden;
+	display: none;
+	margin:0;
+	position: absolute;
+	right: 33px;
+	padding: 5px;
+	top: 5px;
+	background-color: #fff;
+	-moz-box-shadow: 1px 1px 13px #4d4d4d !important;
+	-webkit-box-shadow: 1px 1px 13px #4d4d4d !important;
+	box-shadow: 1px 1px 13px #4d4d4d !important;
+	z-index: 99999995;
+	list-style: none;
+}
+
+table tbody td.td_gear div.arrow_gear, table tbody td.td_gear ul.gear:hover{
+	cursor:default;
+}
+
+table tbody td.td_gear ul.gear li{
+	color: #000;
+	font-size: 11px;
+	margin: 10px;
+	font-weight: normal;
+}
+
+table tbody td.td_gear ul.gear a{
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+}
+
+table tbody td.td_gear ul.gear li:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+
+.gear-box{
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: 99999999;
+	top: 30%;
+	width:277px;
+	left: 33%;
+	height: 40px;
+	padding: 27px;
+	max-width: 1038px;
+	background-color:#ffffff;
+	-moz-box-shadow: 0 1px 20px #B3B3B3 !important;
+	-webkit-box-shadow: 0 1px 20px #B3B3B3 !important;
+	box-shadow: 0 1px 20px #B3B3B3 !important;
+	text-align: left;
+}
+
+#go-to-ticket-box{
+	height: auto !important;
+	max-width: 261px !important;
+	width: 261px !important;
+}
+
+#comment-to-ticket-box{
+	height: auto !important;
+	max-width: 270px !important;
+	width: 270px !important
+}
+
+#follow-ticket-box{
+	height: auto !important;
+	max-width: 258px !important;
+	width: 258px !important;
+}
+
+.gear_box_title {
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+#go-to-ticket-message, #follow-ticket-message, #comment-to-ticket-message{
+	margin-bottom: 20px;
+}
+
+#mistake-gear-box{
+	text-decoration: none;
+	height: auto !important;
+	min-width: 234px !important;
+	max-width: 400px !important;
+}
+
+#mistake-gear-box h5 a{
+	text-decoration: none;
+	color: #000;
+	display: inline-block;
+}
+
+#mistake-gear-box h5 a:hover{
+	text-decoration: underline;
+}
+
+div.cover-box span.cover-message {
+	font-weight:normal;
+}
+
+.gear_option_left {
+	color: #3FA9F5;
+	float: left;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	margin-right: 4px;
+}
+
+.gear_option_right {
+	color: #3FA9F5;
+	float: right;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	margin-right: 4px;
+	text-decoration: none;
+}
+
+.gear_option_center {
+	color: #3FA9F5;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	padding-top: 32px;
+	width: 215px !important;
+	height: auto !important;
+	max-width: 215px !important;
+}
+
+#thanks-text{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+#thanks-title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#thanks-gear-box h6{
+	font-weight: normal;
+	color: #797979;
+}
+
+.gear_option_left:hover, .gear_option_right:hover, .gear_option_center:hover {
+	text-decoration: underline;
+}
+
+#thanks-gear-box{
+	width: 277px !important;
+	height: auto !important;
+	text-align: center;
+}
+
+#share-ticket-box{
+	height: 75px;
+	/*padding: 13px;*/
+	width: 236px !important;
+}
+
+#share-ticket-title{
+	color: #000;
+	font-size: 11px;
+}
+
+#share-ticket-box #share-ticket-description-share {
+	font-style:italic;
+	color:#4d4d4d;
+	font-size:11px;
+}
+
+#share-ticket-cover-message{
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 0;
+	border-bottom-color: #b3b3b3;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #b3b3b3;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #b3b3b3;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #b3b3b3;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	font-size: 8px;
+	position: inherit;
+	width: 234px;
+	background-color:#fff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#share-ticket-box #share-ticket-cover-extra {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#share-ticket-box #share-ticket-helper-share {
+	color: #8e8e8e;
+	font-style: italic;
+	font-size: 11px;
+}
+
+#share-ticket-box #share-ticket-close-share{
+	padding-top: 4px;
+	color: #3FA9F5;
+	float: right;
+	font-weight: bold;
+	font-size: 11px;
+	cursor: pointer;
+	margin-right: 4px;
+}
+
+#share-ticket-box #share-ticket-link {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 3px;
+	padding-left: 2px;
+	padding-bottom: 3px;
+	border-bottom-color: #fff;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-left-color: #fff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #fff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	margin-left: 0px;
+	position: relative;
+	width: 228px;
+	background-color: #fff;
+	font-size: 10px;
+}
+
+#share-ticket-link::selection {
+	border-top-color: #A4D8FF;
+	background: #A4D8FF !important;
+	color:#002D50;
+	text-align: left;
+	padding-left:2.5px;
+}
+#share-ticket-link::-moz-selection {
+	border-top-color: #A4D8FF;
+	background: #A4D8FF !important;
+	color:#002D50;
+	text-align: left;
+	padding-left:2.5px;
+	-moz-appearance: #A4D8FF !important;
+}
+
+
+@media all and (max-width: 600px) {
+	#share-ticket-box{
+		left: 27%;
+	}
+}
+
+@media all and (max-width: 467px) {
+	.gear-box, #share-ticket-box{
+		left: 25%;
+	}
+}
+
+
+@media all and (max-width: 400px) {
+	.gear-box, #share-ticket-box{
+		left: 4%;
+	}
+}
+
+
+#waiting-message-procesing {
+	padding-right: 10px;
+
+}

@@ -1,0 +1,16 @@
+<script id="stats-template-main" type="text/x-handlebars-template">
+	<div class="handle"></div>
+	<header>
+		<h3 class="title">{{title}} -
+			<select class="countries">
+				{{#each countries}}
+					<option>{{this}}</option>
+				{{/each}}
+			</select>
+		</h3>
+	</header>
+	<div class="stats-content">
+	</div>
+	<div class="stats-side">
+	</div>
+</script>

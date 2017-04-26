@@ -1,0 +1,724 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: arimoBold;
+    src: url(arimo/Arimo-Bold.ttf);
+}
+@font-face {
+    font-family: arimoItalic;
+    src: url(arimo/Arimo-Italic.ttf);
+}
+
+@font-face {
+    font-family: arimoRegular;
+    src: url(arimo/Arimo-Regular.ttf);
+}
+
+
+body, html {
+    height: 100%;
+}
+
+body
+{
+	background: #efefea;
+    font-family: arimoRegular, helvetica, sans-serif;
+    color: #808080;
+}
+
+h1 
+{
+    float: left;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 30px;
+    color: #3FA9F5;
+}
+
+.title h4 
+{
+    color: #808080;
+    font-size: 16px;
+    margin: 16px 0 0 22px;
+    text-transform: uppercase;
+    font-family: helvetica, sans-serif;
+    font-weight: initial;
+}
+
+.left 
+{
+    float: left;
+}
+
+.right 
+{
+    float: right;
+}
+
+.clear 
+{
+    clear: both;
+}
+
+.hidden 
+{
+    display: none !important;
+}
+
+.closed 
+{
+    /*display: none;*/
+    background: #f2f2f2 !important;
+}
+.active
+{
+    font-weight: bold !important;
+    font-size: 17px !important;
+}
+/**/
+#container 
+{
+    width: 100%;
+}
+#logo 
+{
+    float: left;
+    width: 122px;
+    height: 43px;
+    background: url(../../_img/jira/icons/logo.png) no-repeat 0 0;
+}
+
+@media
+screen and (-webkit-min-device-pixel-ratio: 1.5),
+screen and (-moz-min-device-pixel-ratio: 1.5),
+screen and (min-device-pixel-ratio: 1.5) {
+    #logo {
+    background: url(../../_img/jira/icons/logo_hi_res.png) no-repeat 0 0;
+    background-size: 122px 43px;
+    }
+}
+
+#side-bar 
+{
+    background: #3fa9f5;
+    width: 90px;
+    /* float: left; */
+    margin: 0;
+    /*padding: 42px 0 0 0;*/
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#side-bar ul
+{
+    padding: 40px 4px 40px 8px; 
+}
+#side-bar li a
+{
+    padding: 20px; 
+    display: inline-block;
+}
+#side-bar li:hover
+{
+    /*padding: 20px; */
+    display: inline-block;
+    background-color: #319cdd;
+}
+#side-bar li a img
+{
+    max-width: 34px;
+}
+
+#top-bar 
+{
+	color: #3fa9f5;
+    background: #fff;
+    width: 100%;
+    padding: 22px 25px 5px;
+    height: 70px;
+}
+#main-nav 
+{
+    padding-top: 3px; 
+}
+#main-nav, #main-nav li
+{
+    float: left;
+}
+#main-nav li a
+{
+    display: inline-block;
+    margin-left: 60px;
+    text-decoration: none;
+    color: #3fa9f5; 
+    font-weight: lighter;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+#main-nav li a:hover
+{
+    /*text-decoration: underline;*/
+}
+
+#sub-nav 
+{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#sub-nav ul
+{
+    float: right;
+    width: 1190px;
+}
+
+#sub-nav li
+{
+    list-style: none;
+    float: left;
+}
+
+#sub-nav a
+{
+  display: inline-block;
+  padding: 16px 16px 16px 56px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  width: 170px;
+  height: 46px;
+  position: relative;
+}
+#sub-nav li a span
+{
+  display: inline-block;
+  margin-right: 28px;
+  position: absolute;
+  left: 20px;
+}
+
+#user_menu
+{
+    position: absolute;
+}
+
+#user_menu li
+{
+    background-color: #CCCCCC;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+}
+
+#user_menu a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+#user_menu a:hover
+{
+    color: #FFFFFF;
+}
+
+.analytics
+{
+    background-color: #98d33c;
+}
+
+.sidebar-analytics {
+    border-left-color: rgb(128, 128, 128);
+border-left-style: none;
+border-left-width: 0px;
+}
+
+.infrastructure 
+{
+    background-color: #c21230;
+}
+.integration
+{
+    background-color: #7968ac;
+}
+.managed_app_development 
+{
+    background-color: #53bbea;
+}
+.website
+{
+    background-color: #f59e1a;
+}
+.tools
+{
+    background-color: #f59e1a;
+}
+.deal_discovery
+{
+    background-color: #dc386d;
+}
+.uncategorised 
+{
+    background-color: #97DAD2;
+}
+#centering 
+{
+  /*margin-left: 90px;*/
+}
+#people_list 
+{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.user 
+{
+    width: 325px;
+    margin: 0 13px 40px;
+    float: left;
+    position: relative;
+}
+.title 
+{
+    background: #fff;
+    margin: 0 0 6px;
+    height: 70px;
+    padding: 12px;
+    box-shadow: 0px 0px 1px #ccc;
+}
+.title img, .title h4 
+{
+    float: left
+}
+.tickets 
+{
+    padding: 10px 14px 55px;
+    height: 500px;
+    overflow-y: auto;
+    background: #fff;
+    box-shadow: 0px 0px 1px #ccc;
+    position: relative;
+}
+.tickets ul 
+{
+    width: 298px;
+}
+.tickets li 
+{
+    text-align: right;
+    padding: 14px 11px 8px 0;
+    position: relative;
+    margin: 0 0 8px;
+    /*height: 92px;*/
+    box-shadow: 0px 0px 1px #ccc;
+}
+
+.tickets .open_issues li 
+{
+    background: #fff;
+}
+
+#people_list li.analytics {border-left: 6px solid #98d33c;background: none;}
+#people_list li.infrastructure {border-left: 6px solid #c21230;background: none;}
+#people_list li.integration{border-left: 6px solid #7968ac;background: none;}
+#people_list li.managed_app_development {border-left: 6px solid #53bbea;background: none;}
+#people_list li.website{border-left: 6px solid #f59e1a;background: none;}
+#people_list li.tools{border-left: 6px solid #f59e1a;background: none;}
+#people_list li.deal_discovery{border-left: 6px solid #dc386d;background: none;}
+#people_list li.uncategorised {border-left: 6px solid #97DAD2;background: none;}
+
+.comments 
+{
+    width: 28px;
+    height: 27px;
+    display: inline-block;
+    position: absolute;
+    top: 39%;
+    right: 85%;
+    padding: 6px 10px;
+    color: #fff;
+}
+.tickets li.analytics .comments {background: url(../../_img/jira/icons/bubble-lytics.png) no-repeat;}
+.tickets li.infrastructure .comments {background: url(../../_img/jira/icons/bubble-infra.png) no-repeat;}
+.tickets li.integration .comments {background: url(../../_img/jira/icons/bubble-inte.png) no-repeat;}
+.tickets li.managed_app_development .comments {background: url(../../_img/jira/icons/bubble-app.png) no-repeat;}
+.tickets li.website .comments {background: url(../../_img/jira/icons/bubble-web.png) no-repeat;}
+.tickets li.tools .comments {background: url(../../_img/jira/icons/bubble-web.png) no-repeat;}
+.tickets li.deal_discovery .comments {background: url(../../_img/jira/icons/bubble-deal.png) no-repeat;}
+
+.tickets li p 
+{
+    margin: 0;
+    padding: 0;
+}
+.tickets li .ticket-number, .tickets li .ticket-title, .tickets li .ticket-category
+{
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+li.analytics .ticket-number, li.analytics .ticket-number a, li.analytics .ticket-category {color: #98d33c !important;}
+li.infrastructure .ticket-number, li.infrastructure .ticket-number a, li.infrastructure .ticket-category {color: #c21230 !important;}
+li.integration .ticket-number, li.integration .ticket-number a, li.integration .ticket-category {color: #7968ac !important;}
+li.managed_app_development .ticket-number,  li.managed_app_development .ticket-number a, li.managed_app_development .ticket-category {color: #53bbea !important;}
+li.website .ticket-number, li.website .ticket-number a, li.website .ticket-category {color: #f59e1a !important;}
+li.tools .ticket-number, li.tools .ticket-number a, li.tools .ticket-category {color: #f59e1a !important;}
+li.deal_discovery .ticket-number, li.deal_discovery .ticket-number a, li.deal_discovery .ticket-category {color: #dc386d !important;}
+li.uncategorised .ticket-number,  li.uncategorised .ticket-number a, li.uncategorised .ticket-category {color: #97DAD2 !important;}
+
+.ticket-created_by
+{
+    font-size: 10px;
+    margin-bottom: 5px !important;
+}
+
+.subtask_bar
+{
+    float: right;
+    width: 195px;
+    height: 6px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.bar_1, .bar_2, .bar_3, .bar_4, .bar_5, .bar_6, .bar_7, .bar_8, .bar_9 {position: absolute; height: 6px; width: 5px;background-color: #fff;} 
+.bar_1 {left: 15px;} 
+.bar_2 {left: 35px;} 
+.bar_3 {left: 55px;} 
+.bar_4 {left: 75px;} 
+.bar_5 {left: 95px;} 
+.bar_6 {left: 115px;} 
+.bar_7 {left: 135px;} 
+.bar_8 {left: 155px;} 
+.bar_9 {left: 175px;} 
+.subtasks_open
+{
+    height: 100%;
+    background-color: #cccccc;
+    width: 50%;
+    float: right;
+}
+
+.subtasks_closed
+{
+    height: 100%;
+    background-color: #53bbea;
+    width: 50%;
+    float: right;
+}
+
+.closed_issues
+{
+  /*display: none;*/
+}
+
+.control-section 
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 1px #ccc;
+    width: 100%;
+}
+.control-section ul 
+{
+    float: right;
+}
+.control-section ul li
+{
+    display: inline-block;
+}
+.flip-icon 
+{
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.ticket-title 
+{
+    width: 196px;
+    display: inline-block;
+    word-break: break-word;
+}
+.ticket-number 
+{
+    font-size: 14px;
+}
+.ticket-number a 
+{
+    text-decoration: none;
+}
+.ticket-number a:hover
+{
+    text-decoration: underline;
+}
+.ticket-updated, .ticket-title 
+{
+    font-size: 11px;
+}
+.ticket-category 
+{
+    font-size: 10px
+}
+
+
+#middle-container 
+{
+  margin: 16px 0 0px;
+  -webkit-perspective: 800;
+  -moz-perspective: 800;
+}
+
+#versions-container {
+    margin: 16px 0px 0px 200px;
+}
+
+#versions_table th {
+    padding: 5px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+#versions_table td {
+    padding: 5px;
+}
+
+#versions_table td:nth-child(3), #versions_table td:nth-child(4){
+    text-align: center;
+}
+
+#versions_table a{
+    text-decoration: none;
+    color: #808080;
+}
+
+#versions_table a:hover{
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+
+
+/*flip*/
+.tickets {
+    float: left;
+    width: 325px;
+    position: relative;
+    font-size: .8em;
+
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+            perspective: 600px;
+}
+  /* -- make sure to declare a default for every property that you want animated -- */
+  /* -- general styles, including Y axis rotation -- */
+
+.tickets .open_issues {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 900;
+    margin-bottom: 50px;
+
+
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+       -moz-transform: rotateX(0deg) rotateY(0deg);
+            transform: rotateX(0deg) rotateY(0deg);
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.tickets.flip .open_issues {
+    z-index: 900;
+
+    -webkit-transform: rotateY(180deg);
+       -moz-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+
+.tickets .closed_issues {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 800;
+    margin-bottom: 50px;
+
+
+    -webkit-transform: rotateY(-180deg);
+       -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+            transform: rotateY(-179deg);
+
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+    /* -- transition is the magic sauce for animation -- */
+    -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+}
+
+.tickets.flip .closed_issues {
+    z-index: 1000;
+
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.subtask_list
+{
+    display: none;
+    width: 195px;
+    float: right;
+}
+.subtask_list span 
+{
+    text-transform: uppercase;
+    color: #BFBFBF;
+    margin: 10px 0 0;
+    font: lighter 11px arimoRegular, helvetica, sans-serif;
+    display: inline-block;
+}
+
+.subtask_count
+{
+    margin-top: 5px !important;
+    font-size: 11px;
+}
+
+.subtask_count a
+{
+    text-decoration: none;
+    color: #808080;
+}
+
+.subtask_count a:hover
+{
+    text-decoration: underline;
+}
+ 
+.subtasks_open
+{
+    height: 100%;
+    background-color: #cccccc;
+    width: 50%;
+    float: right;
+}
+ 
+.subtasks_closed
+{
+    height: 100%;
+    /*background-color: #53bbea;*/
+    width: 50%;
+    float: right;
+}
+ 
+.st_closed_analytics
+{
+    background-color: #98d33c;
+}
+ 
+.st_closed_infrastructure
+{
+    background-color: #c21230;
+}
+.st_closed_integration
+{
+    background-color: #7968ac;
+}
+.st_closed_managed_app_development
+{
+    background-color: #53bbea;
+}
+.st_closed_website
+{
+    background-color: #f59e1a;
+}
+.st_closed_tools
+{
+    background-color: #f59e1a;
+}
+.st_closed_uncategorised
+{
+    background-color: #97DAD2;
+}
+.st_deal_discovery
+{
+    background-color: #dc386d;
+}
+.rotate_img, #global_flip
+{
+    cursor: pointer;
+}
+
+.closed_count
+{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #73de7b;
+    min-width: 20px;
+    height: 20px;
+    padding-top: 4px;
+    float: right;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media all and (max-width: 1420px) {
+	#sub-nav ul {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	#sub-nav ul li {
+		width: 25%;
+	}
+	#sub-nav ul li a {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 700px) {
+	#sub-nav ul li {
+		width: 33.33%;
+	}
+}
+
+@media all and (max-width: 450px) {
+	#sub-nav ul li {
+		width: 50%;
+	}
+	.left span {
+		margin-bottom: 10px;
+	}
+}
+
+.is-sticky #sub-nav {
+	top: 71px !important;
+}

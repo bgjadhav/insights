@@ -1,0 +1,26 @@
+#switch-places {
+	padding: 25px;
+	background-color: rgb(247, 247, 247);
+	position: fixed;
+	width: 700px;
+	height: 180px;
+	left: 35%;
+	top: 25%;
+	z-index: 9999;
+	-webkit-box-shadow: 10px 10px 11px -4px rgba(0,0,0,0.4);
+	-moz-box-shadow: 10px 10px 11px -4px rgba(0,0,0,0.4);
+	box-shadow: 10px 10px 11px -4px rgba(0,0,0,0.4);
+}
+.switch-places-header {
+	font-weight: bold;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.switch-places-btn {
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 14px;
+}
+#switch-places .btn {
+	margin-top: 50px;
+}

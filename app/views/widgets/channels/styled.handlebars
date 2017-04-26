@@ -1,0 +1,25 @@
+<script id="channel-template-styled" type="text/x-handlebars-template">
+	<header>
+		{{#if chart.brain}}
+			<div class="logo">
+				<img src="_img/brain.png" alt="" />
+			</div>
+		{{else}}
+			<div class="text">
+				<span class="main-title">Adaptive</span>
+				<span class="sub-title">Segments</span>
+				<span class="heart">&#9829</span>
+			</div>
+		{{/if}}
+		<div class="buttons">
+			<span class="billed_spend" data-type="billed_spend">Spend</span>
+			<span class="count" data-type="count">Count</span>
+		</div>
+		<div class="description">
+			<p>{{{chart.description}}}</p>
+		</div>
+	</header>
+	<div class="chart">
+		
+	</div>
+</script>

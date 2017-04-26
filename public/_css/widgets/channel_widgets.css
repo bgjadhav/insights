@@ -1,0 +1,532 @@
+#homepage .channel-main {
+	overflow: hidden;
+}
+
+.channel-main .triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	display: inline-block;
+}
+
+.channel-main .triangle-green {
+	border-width: 0 6px 10px 6px;
+	border-color: transparent transparent #4adbbe transparent;
+}
+
+.channel-main .triangle-red {
+	border-width: 10px 6px 0 6px;
+	border-color: #ef4646 transparent transparent transparent;
+}
+
+.channel-main .triangle-white {
+	border-width: 6px 4px 0 4px;
+	border-color: #ffffff transparent transparent transparent;
+}
+
+.channel-main .triangles {
+	margin: 30px 0 0 20px;
+	display: inline-block;
+}
+
+.channel-main header {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.channel-main header .title {
+	color: #ffa053;
+	font-weight: bold;
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-left: 10px;
+}
+.channel-main header .title span {
+	color: #fff;
+	font-weight: normal;
+}
+
+.channel-main header .switcher {
+	display: inline-block;
+}
+.channel-main header .switcher span {
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+}
+.channel-main header .switcher span.triangle {
+	margin-left: 5px;
+ 	vertical-align: middle;
+}
+.channel-main header .switcher span.orgs, .channel-main header .switcher span.advs {
+	display: none;
+}
+
+.channel-main header .switcher .advs {
+	display: none;
+}
+
+.channel-main header ul {
+	margin: 10px 20px 0 8px;
+}
+.channel-main header ul li {
+	margin: 0 10px;
+	padding: 7px 0;
+	float: left;
+	border-radius: 10px;
+	color: #577985;
+	list-style: none;
+	font-family: verdana;
+	font-size: 14px;
+	cursor: pointer;
+}
+.channel-main header ul li.active {
+	background: #2f3e44;
+	padding: 7px 12px;
+	color: #ffffff;
+}
+.channel-main header .export {
+	float: right;
+	background: #ef4646;
+	border-radius: 10px;
+	padding: 7px 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: 11px;
+	cursor: pointer;
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+.channel-main .rows {
+	clear: both;
+}
+.channel-main .rows .triangle-green {
+	border-width: 0 3px 5px 3px;
+}
+
+.channel-main .rows .triangle-red {
+	border-width: 5px 3px 0 3px;
+}
+.channel-main .rows .square {
+	width: 4px;
+	height: 4px;
+	background: #929497;
+	display: inline-block;
+}
+.channel-main .row {
+	padding: 7px 0 5px;
+	margin-bottom: 2px;
+	overflow: hidden;
+}
+.channel-main .row .number {
+	font-size: 21px;
+	float: left;
+	color: #577985;
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-weight: bold;
+	text-align: right;
+	width: 30px;
+}
+.channel-main .row .movement {
+	width: 20px;
+	float: left;
+	min-height: 15px;
+	text-align: center;
+}
+.channel-main .row div.name {
+	float: left;
+	width: 145px;
+}
+.channel-main .row div.last_week, .channel-main .row div.this_week {
+	width: 90px;
+	float: left;
+}
+.channel-main .row span.title {
+	color: #577985;
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: 11px;
+	display: none;
+}
+.channel-main .row span.name {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: verdana;
+	font-size: 11px;
+	display: block;
+	max-height: 18px;
+	margin-top: 3px;
+}
+.channel-main .row span.spend {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+	font-size: 16px;
+	color: #fff;
+}
+
+.channel-main .channel-loading {
+	text-align: center;
+	margin: 20px;
+}
+
+.channel-main .bottom-bar-left {
+	height: 5px;
+	background: #4adbbf;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.channel-main .bottom-bar-right {
+	display: none;
+/*
+	height: 5px;
+	background: #ef4646;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+*/
+}
+
+.channel-main .row:nth-child(1) {
+	background: rgba(244,158,30,0.25);
+}
+.channel-main .row:nth-child(1) .number {
+	color: #f49e1e !important;
+}
+.channel-main .row:nth-child(1) .title {
+	color: #fff !important;
+	display: block !important;
+}
+.channel-main .row:nth-child(1) .name {
+	color: #f49e1e;
+}
+.channel-main .row:nth-child(1) .spend {
+	color: #f49e1e;
+}
+
+.channel-main .row:nth-child(2) {
+	background: rgba(241,241,241,0.15);
+}
+.channel-main .row:nth-child(2) .number {
+	color: #bbbdbf !important;
+}
+
+.channel-main .row:nth-child(3) {
+	background: rgba(224,133,71,0.1);
+}
+.channel-main .row:nth-child(3) .number {
+	color: #c3996b !important;
+}
+
+.channel-main .row:nth-child(11) {
+	opacity: 0.5;
+}
+.channel-main .row:nth-child(12) {
+	opacity: 0.25;
+}
+
+/* overwrite backgrounds */
+#homepage .dark-blue {
+	background: #263238;
+}
+#homepage .blue {
+	background: #577985;
+}
+#homepage .grey {
+	background : #676b65;
+}
+#homepage .black {
+	background : #231f20;
+}
+
+/* blue style */
+.channel-main .blue header .title {
+	color: #ffa053;
+}
+.channel-main .blue ul li {
+	color: #fff;
+}
+.channel-main .blue ul li.active {
+	color: #fff;
+	background: #3c5d66;
+}
+.channel-main .blue .row .number {
+	color: #fff;
+}
+.channel-main .blue .row span.title {
+	color: #3c5d66;
+}
+
+/* grey style */
+.channel-main .grey header .title {
+	color: #53e5c9;
+}
+.channel-main .grey ul li {
+	color: #fff;
+}
+.channel-main .grey ul li.active {
+	color: #fff;
+	background: #14937b;
+}
+.channel-main .grey .row .number {
+	color: #53e5c9;
+}
+.channel-main .grey .row span.title {
+	color: #4c4c4c;
+}
+
+/* black style */
+.channel-main .black header .title {
+	color: #4adbbf;
+}
+.channel-main .black ul li {
+	color: #fff;
+}
+.channel-main .black ul li.active {
+	color: #fff;
+	background: #4adbbf;
+}
+.channel-main .black .row .number {
+	color: #f49e1e;
+}
+.channel-main .black .row span.title {
+	color: #5c5a5b;
+}
+
+.channel-main .grey .export, .channel-main .blue .export {
+	background: #f49e1e;
+}
+
+
+/* small widget */
+.channel-small {
+	color: #fff;
+}
+
+.channel-small header {
+	margin-bottom: 8px;
+}
+.channel-small .triangles {
+	margin-top: 24px;
+}
+.channel-small .section {
+	margin-left: 20px;
+	overflow: hidden;
+}
+.channel-small .section div {
+	height: 49px;
+	width: 117px;
+	float: left;
+	background: rgba(255,255,255,0.05);
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-right: 4px;
+}
+.channel-small .section div .title {
+	font-size: 11px;
+	margin-top: 10px;
+	display: block;
+	color: #577985;
+}
+.channel-small .section div .number {
+	display: block;
+	font-size: 16px;
+}
+.channel-small .section div.title {
+	background: rgba(255,255,255,0.1);
+	font-size: 10px;
+	line-height: 49px;
+	margin-right: 0;
+	width: 100px;
+}
+.channel-small .blue .section div .title {
+	color: #8ab5bc;
+}
+.channel-small .grey .section div .title {
+	color: #4adbbf;
+}
+.channel-small .black .section div .title {
+	color: #4adbbf;
+}
+
+/* chart widget */
+.channel-chart .chart {
+	height: 236px;
+	padding: 10px 20px 0;
+}
+.channel-chart .buttons {
+	float: right;
+	margin: 20px 20px 0 0;
+}
+.channel-chart .buttons span {
+	display: inline-block;
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+	border-radius: 6px;
+	background: #3e6063;
+	color: #fff;
+	padding: 7px 15px;
+	font-size: 14px;
+	margin-right: 3px;
+	cursor: pointer;
+}
+.channel-chart .buttons span.sov {
+	background: #ffa053;
+}
+
+.highcharts-tooltip>span .inner {
+	display: inline-block;
+    padding: 8px 12px;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* extra similar widgets */
+
+.highcharts-tooltip {
+	z-index: 9999;
+}
+
+/* brain style */
+#homepage .brain {
+	background: #353f47;
+}
+.channel-styled header {
+	background: #2b363d;
+	margin-bottom: 0;
+	height: 80px;
+}
+.channel-styled .description {
+	box-sizing: border-box;
+	width: 282px;
+	height: 40px;
+	float: right;
+	margin: 20px 20px 0 0;
+	background: rgba(255,255,255,0.05);
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+	color: #bbbdbf;
+	padding: 5px 10px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.channel-styled .description span {
+	font-weight: bold;
+}
+.channel-styled .description span.billed_spend {
+	color: #5bbbea;
+}
+.channel-styled .description span.count {
+	color: #f69f19;
+}
+.channel-styled .brain .logo {
+	margin: 17px 0 0 20px;
+	float: left;
+	width: 243px;
+}
+.channel-styled .buttons {
+	margin-right: 10px;
+}
+.channel-styled .buttons  span {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	background: transparent;
+}
+.channel-styled .buttons .billed_spend {
+	border: 2px solid #5bbbea;
+	color: #5bbbea;
+}
+.channel-styled .buttons .billed_spend.active {
+	background: #5bbbea;
+	color: #fff;
+}
+.channel-styled .buttons .count {
+	border: 2px solid #f69f19;
+	color: #f69f19;
+}
+.channel-styled .buttons .count.active {
+	background: #f69f19;
+	color: #fff;
+}
+.channel-styled header .text {
+	float: left;
+	margin: 15px 0 0 20px;
+}
+.channel-styled header .text span {
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", "Roboto", "Avenir LT W01 35 Light", arial;
+}
+.channel-styled header .text span.main-title {
+	color: #19c4a2;
+	font-size: 22px;
+}
+.channel-styled header .text span.sub-title {
+	color: #fff;
+	font-weight: bold;
+	font-size: 26px;
+	margin-top: -6px;
+	display: block;
+}
+.channel-styled header .text span.heart {
+	display: none;
+}
+
+#homepage .adaptive {
+	background: #636761;
+}
+.channel-styled .adaptive header {
+	background: #575b55;
+}
+.channel-styled .adaptive .buttons .billed_spend {
+	border: 2px solid #19c4a2;
+	color: #19c4a2;
+}
+.channel-styled .adaptive .description {
+	width: 226px;
+}
+.channel-styled .adaptive .buttons .billed_spend.active {
+	background: #19c4a2;
+	color: #fff;
+}
+.channel-styled .adaptive .buttons .count {
+	border: 2px solid #5bbbea;
+	color: #5bbbea;
+}
+.channel-styled .adaptive .buttons .count.active {
+	background: #5bbbea;
+	color: #fff;
+}
+.channel-styled .adaptive .description .count {
+	color: #5bbbea;
+}
+.channel-styled .adaptive .description .billed_spend {
+	color: #19c4a2;
+}
+
+
+/* easter egg - sexy style */
+#homepage .sexy {
+	background: #6092a2;
+}
+.channel-styled .sexy header {
+	background: #558798;
+}
+.channel-styled .sexy .text span.main-title {
+	color: #ffb9b6;
+}
+.channel-styled .sexy .text span.heart {
+	font-size: 36px;
+	color: #ffb9b6;
+	position: absolute;
+	top: 29px;
+    left: 169px;
+	display: block;
+}

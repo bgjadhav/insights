@@ -1,0 +1,84 @@
+<script id="publisher_tool_publisher_form" type="text/x-handlebars-template">
+    <div id="publisher-nav" class="display-table" style="margin-bottom:-19px;">
+        <div class="row">
+            <div class="cell four">
+                <h1 class="title">Publisher Knowledge Base</h1>
+            </div>
+            <div class="cell six text-right middle details">
+                <div class="publisher">
+                    <img class="logo" src=""/>
+                    <div class="name"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell four">
+                <div class="actions">
+                    <ul>
+                        <li class="publisher" data-fooltip="Select a publisher">
+                            <select class="chosen-select dropdown" data-placeholder="Publisher" style="width:350px;" tabindex="1">
+                                <option value=""></option>
+                                {{#each options}}
+                                    <option data-publisher-id="{{publisher_id}}" data-partner-id="{{partner_id}}" data-sync="{{sync}}" style="cursor: pointer;" value="{{name}}">{{name}}</option>
+                                {{/each}}
+                            </select>
+                        </li>
+
+                        {{#if save}}
+                            <li><a href="#"
+                                   id="save"
+                                   class="btn blue"
+                                   data-fooltip="Save your changes">Save</a>
+                            </li>
+                        {{/if}}
+
+                        {{#if edit}}
+                            <li><a href="#"
+                                   id="edit"
+                                   class="btn blue">Edit</a>
+                            </li>
+                        {{/if}}
+
+                        {{#if add}}
+                            <li><a href="#"
+                                   id="add"
+                                   class="btn"
+                                   data-fooltip="Add a new publisher">Add Publisher</a>
+                            </li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cell six text-right">
+                {{#if actions }}
+                    <div class="actions">
+                        <ul>
+                            <li><a href="#"
+                                   id="select-all"
+                                   class="btn"
+                                   data-fooltip="Select checked questions.">select all</a></li>
+                            <li>
+                                <a href="#"
+                                   id="add-answers"
+                                   class="btn"
+                                   data-fooltip="Enable answer option(s) for selected questions.">add answers</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   id="add-note"
+                                   class="btn"
+                                   data-fooltip="Enable note input(s) for selected questions.">add notes</a>
+                            </li>
+                            <li class="filter">
+                                <input type="text"
+                                       placeholder="Filter by question..."
+                                       data-fooltip="Filter questions by keyword">
+                            </li>
+                        </ul>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</script>

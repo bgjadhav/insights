@@ -1,0 +1,27 @@
+@media (max-width: 500px) {
+
+	#cso #DBOpenActivity_PRDREQ .dropdown, #cso #DBResolutionAnalytics .dropdown, #cso #DBOpenActivitySubType .dropdown {
+		margin-bottom: 8px;
+		margin-top: 0px;
+	}
+
+	#cso #DBOpenActivity_PRDREQ .filters, #cso #DBResolutionAnalytics .filters, #cso #DBOpenActivitySubType .filters {
+		margin-bottom: 50px;
+	}
+
+}
+
+#main div.cover {
+	top: 23px;
+}
+
+/*
+#cso nav ul li {
+    border-top-right-radius: 15px;
+    margin-right: 1px;
+}
+
+#cso.product nav ul li.active a {
+    cursor: default;
+}
+*/

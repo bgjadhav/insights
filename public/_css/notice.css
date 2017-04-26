@@ -1,0 +1,38 @@
+#notice {
+	width: auto;
+	box-sizing: border-box;
+	font-family: arimo, arial;
+	font-size: 11px;
+	float: left;
+	transform: translate(0%, 0%);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 30px;
+	text-align: left;
+}
+
+#notice span {
+  font-weight: bold;
+}
+
+#notice.info {
+	background: #feea89 url('../_img/info_icon.png') no-repeat 10px 6px;
+	background-size: 15px;
+	color: #3c3528;
+	border: 1px solid;
+}
+
+#notice.warning {
+	background: #faf1e7 url('../_img/dashboard/alert.png') no-repeat 10px 6px;
+	background-size: 15px;
+	color: #fc9a36;
+	border: 1px solid;
+}
+
+#notice.error {
+	background: #fff5f3 url('../_img/dashboard/error.png') no-repeat 10px 6px;
+	background-size: 15px;
+	color: #b91520;
+	border: 1px solid;
+}

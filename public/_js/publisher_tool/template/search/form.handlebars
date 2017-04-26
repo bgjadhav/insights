@@ -1,0 +1,58 @@
+<script id="publisher_tool_search_form" type="text/x-handlebars-template">
+    <div id="search" class="display-table">
+        <div class="row">
+            <div class="cell five">
+                <h1 class="title">Publisher Knowledge Base</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell text-center five" data-fooltip="Retrieve publisher(s) who have answers for these questions tags">
+                <div class="item include">
+                    <h1>Include Question Tags</h1>
+                    <select id="include-question-tags" data-placeholder=" " multiple style="width: 200px;">
+                        {{#each options}}
+                            <option value="{{ TAG_ID }}">{{ TAG }}</option>
+                        {{/each}}
+                    </select>
+
+                    <ul class="include-keywords"
+                        data-fooltip="Retrieve publisher(s) only where there answer(s) are like these answer(s)">
+                        <li><a href="" class="action add_keyword">Filter by keyword</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cell text-center five" data-fooltip="Exclude publisher(s) who have answers for these question tags">
+                <div class="item exclude">
+                    <h1>Exclude Question Tags</h1>
+                    <select id="exclude-question-tags" data-placeholder=" " multiple style="width: 200px;">
+                        {{#each options}}
+                            <option value="{{ TAG_ID }}">{{ TAG }}</option>
+                        {{/each}}
+                    </select>
+
+                    <ul class="exclude-keywords"
+                        data-fooltip="Exclude publisher(s) only where there answer(s) are like these answer(s)">
+                        <li>
+                            <a href="" class="action add_keyword">Filter by keyword</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="search-results" class="display-table">
+        <thead>
+            <tr class="header row">
+                <th colspan="2" class="cell">Results</th>
+            </tr>
+            <tr id="table-notification" class="row">
+                <td colspan="2" class="cell ten notification" style="display: table-cell;"> Input search criteria</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Template -->
+        </tbody>
+    </table>
+</script>

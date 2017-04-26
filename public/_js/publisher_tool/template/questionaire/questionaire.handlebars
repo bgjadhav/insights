@@ -1,0 +1,94 @@
+<script id="publisher_tool_questionaire_form" type="text/x-handlebars-template">
+    <table id="questionaire" class="display-table">
+        <thead>
+            <tr class="header row">
+                 <th class="cell three border-right">
+                    Question
+                 </th>
+                 <th class="cell seven">
+                    Answer
+                 </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each this}}
+                 <tr class="question row" data-id="{{QUESTION_ID}}" data-question_title="{{FILTER_QUESTION_TITLE}}.">
+                     <td class="cell three middle border-right toggle">
+                         <div class="row">
+                             <div class="cell one middle" style="border: none;">
+                                 <div class="question-select">
+                                     <input id="question-select-{{QUESTION_ID}}" type="checkbox" class="select"/>
+                                     <label for="question-select-{{QUESTION_ID}}"></label>
+                                </div>
+                             </div>
+                             <div class="cell nine middle" style="border: none;">
+                                <span class="name">{{QUESTION_TITLE}}</span>
+                             </div>
+                         </div>
+                     </td>
+                     <td class="cell seven lock">
+                         <div class="unanswered">
+                             <span>Click to <a href="">Add</a> an answer</span>
+                         </div>
+                         <div class="answer">
+                             {{#if options}}
+                                <ul>
+                                 {{#each options}}
+                                     <li class="option" data-answer-option-id="{{ANSWER_OPTION_ID}}" data-type="{{ANSWER_TYPE}}">
+                                         {{#is ../ANSWER_TYPE 'SINGLE'}}
+                                             <input type="radio" name="button{{../../QUESTION_ID}}" value="{{ANSWER_OPTION_ID}}" />
+                                         {{/is}}
+
+                                         {{#is ../ANSWER_TYPE 'MANY'}}
+                                             <input type="checkbox" name="button{{../../QUESTION_ID}}" value="{{ANSWER_OPTION_ID}}" />
+                                         {{/is}}
+
+                                         {{#is HAS_IMAGE "1" }}
+                                             <img src="_img/exchanges/{{ANSWER}}.png" alt="{{ANSWER}}" />
+                                         {{else}}
+                                             {{#is ../ANSWER_GROUP_ID "2" }}
+                                                 <div class="icons {{lowercase ANSWER}}"></div> {{ANSWER}}
+                                             {{else}}
+                                                 {{ANSWER}}
+                                             {{/is}}
+                                         {{/is}}
+                                     </li>
+                                 {{/each}}
+                             </ul>
+                             {{else}}
+                                 {{#is ../ANSWER_TYPE 'STRING'}}
+                                     <div class="option" data-answer-id="{{ANSWER_OPTION_ID}}" data-type="{{ANSWER_TYPE}}">
+                                         <input type="text" class="string" name="string{{../../QUESTION_ID}}"/>
+                                         {{ANSWER}}
+                                     </div>
+                                 {{/is}}
+                                 {{#is ../ANSWER_TYPE 'MULTI'}}
+                                     <!--Multi select here-->
+                                 {{/is}}
+                                 {{#is ../ANSWER_TYPE 'DECIMAL'}}
+                                     <div class="option" data-answer-id="{{ANSWER_OPTION_ID}}" data-type="{{ANSWER_TYPE}}">
+                                         <input type="text" class="decimal" name="decimal{{../../QUESTION_ID}}" placeholder="0.00">
+                                         {{ANSWER}}
+                                     </div>
+                                 {{/is}}
+                             {{/if}}
+                         </div>
+                    </td>
+                 </tr>
+                 <tr class="add_note row" data-edit-note-id="">
+                     <td class="cell three border-right"></td>
+                     <td class="cell seven">
+                         <input type="hidden" value="{{QUESTION_ID}}" name="question_id">
+                         <textarea type="text" placeholder="Enter your note" style="display: block; width: 100%; min-height: 75px;"/></textarea>
+                         <a href=""
+                            id="save-note"
+                            class="btn blue">Save</a>
+                         <a href=""
+                            id="save-note-close"
+                            class="btn">Close</a>
+                     </td>
+                 </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</script>

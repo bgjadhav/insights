@@ -1,0 +1,51 @@
+<script id="competitiveintel-template" type="text/x-handlebars-template">
+	<div class="row progress-{{priority}}" data-id="{{issue_id}}">
+		<div class="status">
+			<span data-title="{{priority_name}}">{{priority}}</span>
+		</div>
+		<div class="jira-id">
+			<a href="{{open_tracking_url}}">{{key}}</a>
+		</div>
+		<div class="right">
+			<div class="date">{{nice_date}}</div>
+			<div class="stories">{{region}}</div>
+			<div class="stories">{{comment_count}}</div>
+		</div>
+		<div class="version">
+			{{#if open_tracking_url}}
+				<a href="{{open_tracking_url}}" target="_blank" class="info"></a>
+			{{else}}
+				<a class="info"></a>
+			{{/if}}
+			<span class="name">{{summary}}</span>
+		</div>
+	</div>
+	<div class="extra">
+		<div class="sub-row">
+			<div class="button">
+				<a href="#">Details</a>
+			</div>
+			<div class="components">
+				<span class="title">{{components_title}}</span>
+				<ul>
+					{{#each components}}
+						<li>{{component}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="components">
+				<span class="title">{{labels_title}}</span>
+				<ul>
+					{{#each labels}}
+						<li>{{label}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			<span class="more"></span>
+			<div class="status-description">
+				<span class="info">{{overview}}...</span>
+				<span class="description-detail" id="desc_{{issue_id}}"></span>
+			</div>
+		</div>
+	</div>
+</script>

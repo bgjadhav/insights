@@ -1,0 +1,31 @@
+<script id="publisher_tool_publisher_manage" type="text/x-handlebars-template">
+    <div id="add-edit-publisher">
+        <ul>
+            <li data-fooltip="Publisher name" data-align="right">
+                <input type="hidden" name="ID" value="">
+                <input type="hidden" name="PARTNER_ID" value="">
+                <input type="text" name="PUBLISHER" placeholder="Publisher name">
+            </li>
+            <li class="sync" data-fooltip="Sync with open portal" data-align="right">
+                <div class="alert alert-warning">
+                    <label for="sync">
+                        <span style="font-weight: 700">This publisher has an open profile, do you want to sync with it?</span>
+                        <br />
+                        <span style="font-size: 12px;">
+                            If switched on this feature will automatically update this publisher's details with the latest
+                            information on the open portal, this includes the publishers name.
+                        </span>
+                    </label>
+                </div>
+                <select name="sync">
+                    <option value="1">On</option>
+                    <option value="0">Off</option>
+                </select>
+            </li>
+            <li id="add-edit-actions" style="margin-top: 10px;">
+                <a href="" id="save" class="btn blue">Save</a>
+                <a href="" id="cancel" class="btn">Cancel</a>
+            </li>
+        </ul>
+    </div>
+</script>

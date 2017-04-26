@@ -1,0 +1,209 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #efefea;
+}
+#login {
+	position: absolute;
+	width: 564px;
+	margin: 0 auto;
+	height: 275px;
+	top: 50%;
+	left: 50%;
+	margin: -160px 0 0 -282px;
+}
+#login .logo {
+	padding: 60px 0 50px;
+	margin-bottom: 5px;
+	background: #fff;
+	height: 69px;
+	box-shadow: 0px 0px 0px 1px #ececea, 0px 0px 0px 2px #f4f4f1;
+}
+#login .logo img {
+	/*display: inline-block;*/
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	margin-left: -138px;
+	left: 50%;
+	top: 58px;
+	width: 276px;
+}
+#login section {
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+#login section.login form {
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-perspective-origin: center;
+	perspective-origin: center;
+	overflow: hidden;
+}
+#login fieldset {
+	-webkit-transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	transform-origin: bottom;
+	background: #fff;
+	border: 1px solid #ececea;
+	box-shadow: 0px 0px 0px 1px #ececea, 0px 0px 0px 2px #f4f4f1;
+}
+#login.loaded fieldset {
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+#login input[type="text"], #login input[type="password"] {
+	width: 200px;
+	padding: 0;
+	box-sizing: border-box;
+	height: 89px;
+	font-size: 37px;
+	text-align: center;
+	color: #3fa9f5;
+	font-family: "Helvetica Neue", "Avenir LT W01 35 Light", arial;
+	font-weight: lighter;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+#login input.small {
+	font-size: 20px
+}
+#login input[type="submit"] {
+	background: #fff url('../_img/check.svg') no-repeat;
+	border: 0;
+	text-indent: -900em;
+	width: 36px;
+	height: 32px;
+	outline: none;
+	vertical-align: top;
+	margin: 30px 0 0 30px;
+	opacity: 0.2;
+}
+#login.loaded input[type="submit"] {
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+#login input[type="submit"].done {
+	opacity: 1;
+}
+#login ::-webkit-input-placeholder {
+	color: #3fa9f5;
+}
+#login :-moz-placeholder {
+   color: #3fa9f5;
+   opacity: 1;
+}
+#login ::-moz-placeholder {
+   color: #3fa9f5;
+   opacity: 1;
+}
+#login :-ms-input-placeholder {
+   color: #3fa9f5;
+}
+#login .loading {
+	-webkit-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: top;
+	-ms-transform-origin: top;
+	transform-origin: top;
+	width: 100%;
+	height: 10px;
+	background: #3fa9f5;
+	display: none;
+}
+#login.loaded .loading {
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+#login .loading span {
+	display: block;
+	height: 10px;
+	background: #4f86a8;
+	width: 0px;
+}
+#login.animate fieldset {
+	-webkit-transform: rotateX(70deg);
+	transform: rotateX(70deg);
+}
+#login.animate .loading {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+#login input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	-webkit-text-fill-color: #3fa9f5;
+	color: #3fa9f5 !important;
+}
+.holder {
+	position: relative;
+	-webkit-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-perspective-origin: center;
+	perspective-origin: center;
+}
+
+.error_msg {
+	display: none;
+	font-weight: 100;
+	font-family: "Helvetica Neue", "Avenir LT W01 35 Light", arial;
+	border: 1px solid rgb(255, 167, 167);
+	padding: 7px;
+	background-color: rgb(255, 196, 196);
+	border-radius: 5px;
+	text-align: center;
+	font-size: 25px;
+	color: red;
+}
+
+.request_access {
+	display: none;
+	font-size: 37px;
+	padding: 10px 65px;
+	text-align: left;
+	color: #3fa9f5;
+	font-family: "Helvetica Neue", "Avenir LT W01 35 Light", arial;
+	font-weight: lighter;
+	border: 0;
+}
+
+.request_access_link {
+	display: none;
+}
+
+#login.internal-only .request_access p {
+	position: relative;
+}
+
+#login.internal-only .request_access p::before {
+	content : '';
+	background: url('../_img/quotes_start.png');
+	width: 30px;
+	height: 23px;
+	position: absolute;
+	top: 5px;
+	left: -35px;
+}
+
+#login.internal-only .request_access p::after {
+	content : '';
+	background: url('../_img/quotes_end.png');
+	width: 30px;
+	height: 23px;
+	display: inline-block;
+}
+
+#login.internal-only .logo {
+	height: 169px;
+}
+
+#login.internal-only img {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 140px;
+	margin: 0;
+}

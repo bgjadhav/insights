@@ -1,0 +1,24 @@
+<script id="publisher_tool_search_results" type="text/x-handlebars-template">
+    {{#each results}}
+        <tr class="question row" data-search-publisher-id="{{@key}}">
+            <td class="cell publisher middle" colspan="2">
+                <div class="icon closed"></div>
+                {{this.PUBLISHER}}
+            </td>
+        </tr>
+        {{#each this.ANSWERS}}
+            <tr class="question row" data-answer-publisher-id="{{this.PUBLISHER}}">
+                <td class="cell question three border-right">
+                    <div class="question">{{this.QUESTION}}</div>
+                </td>
+                <td class="cell answer seven">
+                    <ul>
+                    {{#each this.ANSWER}}
+                        <li class="option active">{{this}}</li>
+                    {{/each}}
+                    </ul>
+                </td>
+            </tr>
+        {{/each}}
+    {{/each}}
+</script>

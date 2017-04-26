@@ -1,0 +1,151 @@
+<script id="publisher_tool_questionaire_manage_form" type="text/x-handlebars-template">
+    <div id="restore-question">
+         <ul class="input">
+             <li class="input" data-fooltip="Restore this question" data-align="right">
+                 <select name="QUESTION-RESTORE" data-placeholder="Question Restore">
+                     <option value=""></option>
+                     {{#each depreciated}}
+                         <option style="cursor: pointer;" value="{{QUESTION_ID}}">{{QUESTION_TITLE}}</option>
+                     {{/each}}
+                 </select>
+             </li>
+         </ul>
+    </div>
+
+    <div id="add-edit-question">
+        <ul>
+            <li id="question-title" class="input">
+                <ul>
+                    <li>
+                        <input type="text"
+                               name="QUESTION"
+                               placeholder="Question"
+                               data-fooltip="Question"
+                               data-align="right">
+                    </li>
+                    <li>
+                        <a href=""
+                           id="remove-question"
+                           class="btn red"
+                           data-fooltip="Remove this question from the questionaire. Use restore question to bring back this question at a later date."
+                           data-align="right">Remove</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="input">
+                <input type="text"
+                       name="QUESTION-TAGS"
+                       placeholder="Tags"
+                       data-fooltip='Tags which can be used to search for this question, please separate each tag with a comma.'
+                       data-align="right">
+            </li>
+            <li id="question-number" class="input">
+                <ul>
+                    <li>
+                        <input type="text"
+                               name="QUESTION-NUMBER"
+                               class="output"
+                               data-fooltip="Position of this question in questionaire"
+                               data-align="right">
+                    </li>
+                    <li>
+                        <input data-slider="true"
+                               name="SLIDER-QUESTION-NUMBER"
+                               type="text"
+                               data-fooltip="Position of this question in questionaire"
+                               data-align="right">
+                    </li>
+                    <li>
+                        <a href="" id="reset-question-number" class="btn">Reset</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="input" data-fooltip="A parent question which must be answered before this question can appear, leave blank to make this question appear by default." data-align="right">
+                <select name="QUESTION-REQUIRED" data-placeholder="Parent Question">
+                    <option value=""></option>
+                    {{#each parent_questions}}
+                        <option style="cursor: pointer;" value="{{QUESTION_ID}}">
+                            {{QUESTION_TITLE}}
+
+                            {{#is DEPRECIATED 1}}
+                                [DEPRECIATED]
+                            {{/is}}
+                        </option>
+                    {{/each}}
+                </select>
+            </li>
+            <li class="input" data-fooltip="Answer required by the parent question before this question can appear." data-align="right">
+                <select name="ANSWER-REQUIRED" data-placeholder="Required Answer">
+                    <option value=""></option>
+                </select>
+            </li>
+            <li id="question-number" class="input">
+                <ul>
+                    <li>
+                        <input type="text"
+                               name="QUESTION-SUB-NUMBER"
+                               class="output"
+                               data-fooltip="Sub position of this question in relation to parent question."
+                               data-align="right">
+                    </li>
+                    <li>
+                        <input data-slider="true"
+                               name="SLIDER-QUESTION-SUB-NUMBER"
+                               type="text"
+                               data-fooltip="Sub position of this question in relation to parent question."
+                               data-align="right">
+                    </li>
+                    <li>
+                        <a href="" id="reset-question-sub-number" class="btn">Reset</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="input" data-fooltip="Input type for answer." data-align="right">
+                <select name="ANSWER-TYPE" data-placeholder="Answer Type">
+                    <option value=""></option>
+                    <option value="MANY">Answer group (allow multiple answers)</option>
+                    <option value="SINGLE">Answer group (single answer)</option>
+                    <option value="STRING">Input field (text)</option>
+                    <option value="DECIMAL">Input field (decimal)</option>
+                </select>
+            </li>
+            <li class="input" id="add-edit-answer-group">
+                <ul>
+                    <li data-fooltip="A set of options which will become available for answering this question. Multiple questions can use the same answer group." data-align="right">
+                        <select name="ANSWER-GROUP" data-placeholder="Answer Group">
+                            <option value=""></option>
+                            {{#each answer_groups}}
+                                <option style="cursor: pointer;" value="{{ANSWER_GROUP_ID}}">{{ANSWER_GROUP_NAME}}</option>
+                            {{/each}}
+                        </select>
+                    </li>
+                    <li><a href="" class="edit_group btn">Edit</a></li>
+                    <li><a href="" class="add_group btn">Add Group</a></li>
+                </ul>
+
+                <table>
+                    <tr>
+                        <td colspan="2" data-fooltip="Answer group name." data-align="right">
+                            <input type="text" name="ANSWER-GROUP-NAME" placeholder="Answer Group Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-fooltip="Answer group option." data-align="right">
+                            <input type="text" name="ANSWER-OPTION[]" placeholder="Answer"></td>
+                        <td><a href="" class="remove-answer-option">Remove</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" class="add-answer-option">Add Answer Option</a></td>
+                    </tr>
+                </table>
+            </li>
+
+            <li class="input" id="add-edit-actions" style="margin-top: 10px;">
+                <a href="" id="save" class="btn blue">Edit</a>
+                <a href="" id="cancel" class="btn">Cancel</a>
+            </li>
+        </ul>
+
+        <div class="preview"></div>
+    </div>
+</script>

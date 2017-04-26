@@ -1,0 +1,14 @@
+<script id="publisher_tool_alert" type="text/x-handlebars-template">
+    <div class="alert-message alert {{type}}">
+
+        {{#is type "alert-success"}}
+            <span class="icon success"></span>
+        {{/is}}
+
+        {{#is type "alert-danger"}}
+            <span class="icon error"></span>
+        {{/is}}
+
+        {{message}}
+    </div>
+</script>

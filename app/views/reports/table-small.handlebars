@@ -1,0 +1,27 @@
+<div class="table-holder">
+	<table>
+		<thead>
+			<tr>
+				{{#each columns}}
+					<th>{{this}}</th>
+				{{/each}}
+			</tr>
+			{{#if totals}}
+				<tr class="totals open">
+					{{#each totals}}
+						<th class="thTotal">{{this}}</th>
+					{{/each}}
+				</tr>
+			{{/if}}
+		</thead>
+		<tbody>
+			{{#each rows}}
+				<tr>
+					{{#each this}}
+						<td>{{this}}</td>
+					{{/each}}
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,55 @@
+<div class="table-holder">
+	<table class="main">
+		<thead>
+			<tr>
+
+				<th id="th_major">
+					<div id="s_major" class="priority sorting<?php if ($extras['orderI'] == 'major') echo ' sorting_'.strtolower($extras['order']); ?>">
+						<span class="linkToTicket" data-title="Priority Project"><a class="info major"></a></span>
+					</div>
+				</th>
+
+				<th>
+					<div id="s_epic_name" class="title-1 sorting sorting<?php if ($extras['orderI'] == 'epic_name') echo '_'.strtolower($extras['order']); ?>">
+						Project Name
+					</div>
+				</th>
+				<th>
+					<div id="s_components" class="components sorting sorting<?php if ($extras['orderI'] == 'components') echo '_'.strtolower($extras['order']); ?>">
+						Product Category
+					</div>
+				</th>
+				<th>
+					<div id="s_o_target_closed_beta" class="sorting sorting<?php if ($extras['orderI'] == 'o_target_closed_beta') echo '_'.strtolower($extras['order']); ?>">
+						Closed Beta
+					</div>
+				</th>
+				<th>
+					<div id="s_o_target_open_beta" class="sorting sorting<?php if ($extras['orderI'] == 'o_target_open_beta') echo '_'.strtolower($extras['order']); ?>">
+						Open Beta
+					</div>
+				</th>
+				<th>
+					<div id="s_o_target_release" class="sorting sorting<?php if ($extras['orderI'] == 'o_target_release') echo '_'.strtolower($extras['order']); ?>">
+						GA
+					</div>
+				</th>
+				<th>
+					<div id="s_status" class="sorting sorting<?php if ($extras['orderI'] == 'status') echo '_'.strtolower($extras['order']); ?>">
+						Current Phase
+					</div>
+				</th>
+				<th>
+					<div id="s_geo" class="sorting sorting<?php if ($extras['orderI'] == 'geo') echo '_'.strtolower($extras['order']); ?>">
+						Region
+					</div>
+				</th>
+				<th>
+					<div id="s_gear" class="td_gear"></div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</div>
